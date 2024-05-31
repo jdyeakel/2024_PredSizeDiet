@@ -25,7 +25,7 @@
 |--── file_tree.txt  
 |--── ppmr_fit.jl  
 |__── src  
-    |--── allometric_functions_predpersp.nb  
-    |--── analysis_functions.nb  
-    |--── metabolic_constants.nb  
-    |__── ppmr_primary.nb  
+|    |--── allometric_functions_predpersp.nb  
+|    |--── analysis_functions.nb  
+|    |--── metabolic_constants.nb  
+|    |__── ppmr_primary.nb  
