@@ -1,0 +1,543 @@
+﻿continent,order,family,genus,genus_age,richness,mass_mean_log10,mass_mean_grams
+North America,Insectivora,Soricidae,Notiosorex,3.4,1,0.64,4.365158322
+Africa,Rodentia,Muridae,Delanymys,3.4,1,0.7,5.011872336
+North America,Insectivora,Soricidae,Sorex,16.3,29,0.74,5.495408739
+Africa,Insectivora,Soricidae,Suncus,5.2,6,0.84,6.918309709
+Australia,Dasyuromorphia,Dasyuridae,Ningaui,5.2,3,0.84,6.918309709
+Africa,Insectivora,Soricidae,Sylvisorex,1.6,3,0.85,7.079457844
+Australia,Dasyuromorphia,Dasyuridae,Planigale,3.4,4,0.85,7.079457844
+North America,Rodentia,Muridae,Baiomys,7,2,0.93,8.511380382
+North America,Insectivora,Talpidae,Neurotrichus,5.2,1,0.95,8.912509381
+Australia,Diprotodontia,Tarsipedidae,Tarsipes,1.6,1,0.95,8.912509381
+South America,Insectivora,Soricidae,Cryptotis,6,12,0.99,9.77237221
+Africa,Rodentia,Muridae,Desmodilliscus,0.2,1,1,10
+Africa,Insectivora,Soricidae,Crocidura,23.3,97,1.01,10.23292992
+North America,Rodentia,Muridae,Scotinomys,,1,1.05,11.22018454
+North America,Rodentia,Heteromyidae,Microdipodops,3,2,1.06,11.48153621
+Africa,Insectivora,Soricidae,Myosorex,5.2,2,1.07,11.74897555
+Australia,Diprotodontia,Arcobatidae,Arcobates,29.3,1,1.08,12.02264435
+North America,Rodentia,Heteromyidae,Perognathus,17,10,1.08,12.02264435
+Africa,Rodentia,Muridae,Mus,5.2,8,1.12,13.18256739
+Africa,Rodentia,Muridae,Malacothrix,10.4,1,1.13,13.48962883
+South America,Rodentia,Muridae,Microryzomys,,2,1.13,13.48962883
+Africa,Rodentia,Muridae,Heimyscus,,1,1.15,14.12537545
+North America,Rodentia,Muridae,Reithrodontomys,5,15,1.16,14.45439771
+North America,Insectivora,Soricidae,Blarina,3,1,1.18,15.13561248
+Australia,Diprotodontia,Burramyidae,Cercartetus,29.3,4,1.2,15.84893192
+South America,Rodentia,Muridae,Neacomys,,3,1.22,16.59586907
+Africa,Insectivora,Soricidae,Ruwenzorisorex,,1,1.26,18.19700859
+Australia,Rodentia,Muridae,Leggadina,1.6,2,1.27,18.62087137
+South America,Didelphimorphia,Didelphidae,Gracilinanus,,6,1.28,19.05460718
+South America,Rodentia,Muridae,Chilomys,,1,1.28,19.05460718
+Africa,Rodentia,Muridae,Hylomyscus,,4,1.29,19.498446
+South America,Rodentia,Muridae,Eligmodontia,,4,1.29,19.498446
+Africa,Rodentia,Muridae,Steatomys,1.6,3,1.3,19.95262315
+North America,Insectivora,Soricidae,Megasorex,,1,1.3,19.95262315
+Africa,Rodentia,Muridae,Petromyscus,,2,1.3,19.95262315
+North America,Rodentia,Heteromyidae,Chaetodipus,1,13,1.3,19.95262315
+Australia,Dasyuromorphia,Dasyuridae,Sminthopsis,1.6,19,1.31,20.41737945
+South America,Rodentia,Muridae,Neusticomys,,5,1.32,20.89296131
+South America,Paucituberculate,Caenolestidae,Rhyncholestes,,1,1.32,20.89296131
+South America,Rodentia,Muridae,Rhagomys,,1,1.33,21.3796209
+South America,Rodentia,Muridae,Calomys,1.6,9,1.33,21.3796209
+South America,Rodentia,Muridae,Notiomys,,1,1.33,21.3796209
+North America,Rodentia,Muridae,Clethrionomys,,3,1.33,21.3796209
+South America,Microbiotheria,Microbiotheriidae,Dromiciops,,1,1.35,22.38721139
+North America,Rodentia,Dipodidae,Napaeozapus,,1,1.35,22.38721139
+North America,Rodentia,Muridae,Ochrotomys,,1,1.35,22.38721139
+North America,Rodentia,Muridae,Arborimus,,2,1.35,22.38721139
+North America,Rodentia,Dipodidae,Zapus,4,3,1.38,23.98832919
+South America,Rodentia,Muridae,Thalpomys,,2,1.38,23.98832919
+Africa,Insectivora,Chrysochloridae,Calcochloris,,1,1.38,23.98832919
+South America,Rodentia,Muridae,Oligoryzomys,,13,1.39,24.54708916
+South America,Rodentia,Muridae,Chroeomys,,2,1.4,25.11886432
+North America,Rodentia,Muridae,Phenacomys,,1,1.4,25.11886432
+Africa,Rodentia,Muridae,Praomys,1.6,4,1.41,25.70395783
+North America,Rodentia,Muridae,Synaptomys,,2,1.42,26.30267992
+Africa,Insectivora,Chrysochloridae,Eremitalpa,,1,1.42,26.30267992
+South America,Rodentia,Muridae,Scolomys,,2,1.42,26.30267992
+Australia,Dasyuromorphia,Dasyuridae,Parentechinus,,1,1.44,27.54228703
+North America,Rodentia,Muridae,Onychomys,,3,1.44,27.54228703
+Africa,Rodentia,Muridae,Acomys,,6,1.45,28.18382931
+South America,Rodentia,Muridae,Bibimys,,2,1.45,28.18382931
+South America,Paucituberculate,Caenolestidae,Lestoros,,1,1.45,28.18382931
+North America,Rodentia,Muridae,Lemmiscus,,1,1.45,28.18382931
+North America,Rodentia,Muridae,Peromyscus,14,36,1.45,28.18382931
+Australia,Dasyuromorphia,Dasyuridae,Dasykaluta,,1,1.46,28.84031503
+South America,Rodentia,Muridae,Andalgalomys,,2,1.46,28.84031503
+Australia,Dasyuromorphia,Dasyuridae,Pseudantechinus,,3,1.47,29.51209227
+South America,Paucituberculate,Caenolestidae,Caenolestes,,3,1.48,30.1995172
+Australia,Rodentia,Muridae,Pseudomys,5.2,21,1.48,30.1995172
+North America,Rodentia,Muridae,Podomys,,1,1.49,30.90295433
+Africa,Rodentia,Muridae,Lophuromys,10.4,3,1.49,30.90295433
+South America,Rodentia,Muridae,Akodon,5.2,43,1.5,31.6227766
+Africa,Rodentia,Muridae,Gerbillurus,,4,1.5,31.6227766
+South America,Rodentia,Muridae,Geoxus,,1,1.5,31.6227766
+South America,Didelphimorphia,Didelphidae,Marmosops,,9,1.5,31.6227766
+Africa,Rodentia,Muridae,Gerbillus,3.4,9,1.5,31.6227766
+South America,Rodentia,Muridae,Wilfredomys,,2,1.52,33.11311215
+Africa,Rodentia,Muridae,Uranomys,,1,1.53,33.88441561
+South America,Rodentia,Muridae,Podoxymys,,1,1.53,33.88441561
+North America,Rodentia,Muridae,Otonyctomys,,1,1.56,36.30780548
+South America,Rodentia,Muridae,Blarinomys,,1,1.57,37.15352291
+Africa,Macroscelidea,Macroscelididae,Macroscelides,,1,1.58,38.01893963
+South America,Rodentia,Muridae,Bolomys,,5,1.58,38.01893963
+South America,Rodentia,Sciuridae,Sciurillus,,1,1.59,38.9045145
+North America,Rodentia,Muridae,Rheomys,,3,1.59,38.9045145
+Africa,Rodentia,Muridae,Grammomys,,3,1.6,39.81071706
+South America,Rodentia,Muridae,Neusticomys,,1,1.6,39.81071706
+North America,Rodentia,Muridae,Neotomodon,,1,1.6,39.81071706
+Africa,Rodentia,Myoxidae,Graphiurus,,4,1.6,39.81071706
+Africa,Insectivora,Chrysochloridae,Amblysomus,,3,1.61,40.73802778
+Aust,Rodentia,Muridae,Xeromys,,1,1.61,40.73802778
+Australia,Diprotodontia,Burramyidae,Burramys,,1,1.62,41.68693835
+North America,Insectivora,Talpidae,Condylura,,1,1.62,41.68693835
+South America,Didelphimorphia,Didelphidae,Marmosa,5.2,10,1.63,42.65795188
+South America,Rodentia,Muridae,Aepeomys,,2,1.63,42.65795188
+North America,Rodentia,Muridae,Microtus,,19,1.63,42.65795188
+Africa,Rodentia,Muridae,Dephomys,,1,1.63,42.65795188
+South America,Rodentia,Muridae,Irenomys,,1,1.63,42.65795188
+Africa,Rodentia,Muridae,Rhabdomys,,1,1.64,43.65158322
+Africa,Insectivora,Chrysochloridae,Chrysochloris,,2,1.65,44.66835922
+South America,Rodentia,Muridae,Phyllotis,1,13,1.65,44.66835922
+Australia,Dasyuromorphia,Dasyuridae,Antechinus,,8,1.67,46.77351413
+South America,Rodentia,Muridae,Wiedomys,,1,1.67,46.77351413
+South America,Rodentia,Muridae,Melanomys,,3,1.67,46.77351413
+Australia,Rodentia,Muridae,Notomys,,8,1.68,47.86300923
+Africa,Macroscelidea,Macroscelididae,Elephantulus,,9,1.68,47.86300923
+South America,Rodentia,Muridae,Chibchanomys,,1,1.7,50.11872336
+North America,Rodentia,Muridae,Osgoodomys,,1,1.7,50.11872336
+Africa,Rodentia,Muridae,Saccostomus,,2,1.7,50.11872336
+North America,Insectivora,Talpidae,Parascalops,,1,1.71,51.2861384
+South America,Rodentia,Muridae,Pseudoryzomys,,1,1.71,51.2861384
+Africa,Rodentia,Muridae,Hybomys,,3,1.71,51.2861384
+Africa,Rodentia,Muridae,Taterillus,,3,1.71,51.2861384
+Africa,Rodentia,Muridae,Deomys,,1,1.71,51.2861384
+Africa,Rodentia,Muridae,Megadendromus,,1,1.72,52.48074602
+North America,Rodentia,Muridae,Lemmus,,1,1.72,52.48074602
+Africa,Insectivora,Chrysochloridae,Chlorotalpa,,1,1.72,52.48074602
+Africa,Rodentia,Muridae,Colomys,,1,1.72,52.48074602
+South America,Rodentia,Muridae,Oxymycterus,,12,1.73,53.70317964
+Africa,Rodentia,Muridae,Desmodillus,,1,1.73,53.70317964
+South America,Rodentia,Muridae,Lenoxus,,1,1.73,53.70317964
+Africa,Rodentia,Bathyergidae,Heterocephalus,,1,1.74,54.95408739
+Australia,Notoryctemorphia,Notoryctidae,Notoryctes,,1,1.74,54.95408739
+Africa,Rodentia,Muridae,Sekeetamys,,1,1.74,54.95408739
+North America,Rodentia,Muridae,Dicrostonyx,,2,1.75,56.23413252
+South America,Didelphimorphia,Didelphidae,Monodelphis,1.6,14,1.75,56.23413252
+South America,Rodentia,Muridae,Auliscomys,,4,1.75,56.23413252
+Africa,Rodentia,Muridae,Zelotomys,,2,1.76,57.54399373
+South America,Rodentia,Muridae,Oecomys,,14,1.77,58.88436554
+South America,Rodentia,Muridae,Galenomys,,1,1.77,58.88436554
+North America,Rodentia,Muridae,Nyctomys,,1,1.78,60.25595861
+South America,Rodentia,Muridae,Chelemys,,2,1.79,61.65950019
+South America,Rodentia,Muridae,Oryzomys,,29,1.79,61.65950019
+South America,Rodentia,Muridae,Zygodontomys,,2,1.8,63.09573445
+South America,Rodentia,Muridae,Abrawayaomys,,1,1.8,63.09573445
+North America,Rodentia,Muridae,Ototylomys,,1,1.8,63.09573445
+Australia,Rodentia,Muridae,Pogonomys,,1,1.8,63.09573445
+South America,Rodentia,Muridae,Neotomys,,1,1.81,64.5654229
+Africa,Rodentia,Muridae,Mylomys,,1,1.81,64.5654229
+South America,Rodentia,Muridae,Graomys,,3,1.81,64.5654229
+South America,Rodentia,Muridae,Anotomys,,1,1.82,66.0693448
+Africa,Rodentia,Muridae,Mystromys,,1,1.83,67.60829754
+Australia,Dasyuromorphia,Dasyuridae,Parantechinus,,1,1.84,69.18309709
+South America,Rodentia,Muridae,Andinomys,,1,1.84,69.18309709
+North America,Rodentia,Heteromyidae,Dipodomys,,17,1.84,69.18309709
+South America,Rodentia,Octodontidae,Tympanoctomys,,1,1.85,70.79457844
+South America,Rodentia,Muridae,Rhipidomys,,13,1.85,70.79457844
+South America,Rodentia,Muridae,Reithrodon,,1,1.85,70.79457844
+Africa,Rodentia,Muridae,Malacomys,,2,1.85,70.79457844
+North America,Rodentia,Sciuridae,Tamias,,22,1.86,72.44359601
+Africa,Rodentia,Muridae,Pelomys,,3,1.86,72.44359601
+South America,Rodentia,Muridae,Thomasomys,,25,1.86,72.44359601
+Africa,Rodentia,Muridae,Arvicanthis,,3,1.87,74.13102413
+Africa,Rodentia,Muridae,Thamnomys,,1,1.88,75.8577575
+South America,Xenarthra,Dasypodidae,Chlamyphorus,,2,1.88,75.8577575
+South America,Didelphimorphia,Didelphidae,Lestodelphys,,1,1.88,75.8577575
+South America,Rodentia,Echimyidae,Clyomys,,2,1.89,77.62471166
+Africa,Rodentia,Muridae,Aethomys,,4,1.89,77.62471166
+South America,Rodentia,Muridae,Delomys,,2,1.89,77.62471166
+North America,Insectivora,Talpidae,Scapanus,,3,1.89,77.62471166
+Australia,Rodentia,Muridae,Melomys,,4,1.89,77.62471166
+Africa,Primates,Galagonidae,Galagoides,,2,1.89,77.62471166
+North America,Rodentia,Muridae,Nelsonia,,1,1.9,79.43282347
+Africa,Rodentia,Muridae,Thallomys,,1,1.91,81.28305162
+Africa,Rodentia,Muridae,Psammomys,,1,1.91,81.28305162
+South America,Rodentia,Muridae,Ichthyomys,,4,1.92,83.17637711
+Africa,Rodentia,Muridae,Stochomys,,1,1.92,83.17637711
+South America,Rodentia,Muridae,Euneomys,,4,1.93,85.11380382
+South America,Rodentia,Muridae,Punomys,,1,1.93,85.11380382
+North America,Rodentia,Muridae,Habromys,,4,1.93,85.11380382
+Australia,Rodentia,Muridae,Zyzomys,,5,1.95,89.12509381
+South America,Rodentia,Heteromyidae,Heteromys,,6,1.95,89.12509381
+South America,Rodentia,Caviidae,Cavia,,5,1.95,89.12509381
+South America,Carnivora,Mustelidae,Conepatus,,5,1.95,89.12509381
+North America,Rodentia,Sciuridae,Cynomys,,5,1.95,89.12509381
+Africa,Rodentia,Muridae,Dendromus,5.2,5,1.95,89.12509381
+North America,Rodentia,Geomyidae,Geomys,,5,1.95,89.12509381
+Africa,Artiodactyla,Bovidae,Kobus,,5,1.95,89.12509381
+Africa,Rodentia,Muridae,Lemniscomys,,5,1.95,89.12509381
+South America,Rodentia,Heteromyidae,Liomys,,5,1.95,89.12509381
+North America,Rodentia,Sciuridae,Marmota,,5,1.95,89.12509381
+Africa,Rodentia,Muridae,Mastomys,,5,1.95,89.12509381
+South America,Rodentia,Echimyidae,Mesomys,,5,1.95,89.12509381
+Africa,Rodentia,Muridae,Myomys,,5,1.95,89.12509381
+North America,Rodentia,Geomyidae,Orthogeomys,,5,1.95,89.12509381
+South America,Primates,Cebidae,Pithecia,,5,1.95,89.12509381
+South America,Carnivora,Canidae,Pseudalopex,,5,1.95,89.12509381
+South America,Primates,Cebidae,Saimiri,,5,1.95,89.12509381
+North America,Rodentia,Geomyidae,Thomomys,,5,1.95,89.12509381
+South America,Didelphimorphia,Didelphidae,Thylamys,3.4,5,1.95,89.12509381
+Africa,Rodentia,Muridae,Beamys,,1,1.95,89.12509381
+Africa,Rodentia,Muridae,Dasymys,,1,1.96,91.20108394
+North America,Insectivora,Talpidae,Scalopus,,1,1.96,91.20108394
+Africa,Insectivora,Soricidae,Scutisorex,,1,1.96,91.20108394
+South America,Rodentia,Muridae,Phaenomys,,1,1.97,93.32543008
+Africa,Rodentia,Muridae,Tatera,,8,1.98,95.4992586
+South America,Rodentia,Muridae,Juscelinomys,,1,1.99,97.7237221
+Africa,Rodentia,Dipodidae,Jaculus,,2,1.99,97.7237221
+Africa,Insectivora,Tenrecidae,Micropotamogale,,1,1.99,97.7237221
+South America,Rodentia,Sciuridae,Microsciurus,,4,2,100
+Australia,Dasyuromorphia,Dasyuridae,Phascogale,,2,2,100
+Australia,Dasyuromorphia,Dasyuridae,Dasycercus,,2,2.01,102.3292992
+North America,Rodentia,Sciuridae,Glaucomys,,2,2.01,102.3292992
+Africa,Rodentia,Bathyergidae,Cryptomys,,3,2.02,104.7128548
+South America,Didelphimorphia,Didelphidae,Micoureus,,4,2.04,109.6478196
+North America,Rodentia,Muridae,Megadontomys,,1,2.05,112.2018454
+Africa,Rodentia,Muridae,Stenocephalemys,,2,2.05,112.2018454
+South America,Rodentia,Octodontidae,Aconaemys,,2,2.06,114.8153621
+South America,Rodentia,Echimyidae,Carterodon,,1,2.06,114.8153621
+South America,Didelphimorphia,Didelphidae,Glironia,,1,2.06,114.8153621
+North America,Rodentia,Sciuridae,Ammospermophilus,,4,2.09,123.0268771
+Africa,Rodentia,Muridae,Meriones,,3,2.1,125.8925412
+Australia,Rodentia,Muridae,Rattus,,10,2.1,125.8925412
+Australia,Diprotodontia,Petauridae,Gymnobelideus,,1,2.1,125.8925412
+South America,Rodentia,Octodontidae,Spalacopus,,1,2.11,128.8249552
+Africa,Rodentia,Muridae,Parotomys,,2,2.11,128.8249552
+North America,Rodentia,Muridae,Xenomys,,1,2.11,128.8249552
+North America,Rodentia,Muridae,Sigmodon,,9,2.12,131.8256739
+South America,Rodentia,Octodontidae,Octomys,,1,2.12,131.8256739
+South America,Rodentia,Muridae,Isthmomys,,1,2.14,138.0384265
+South America,Rodentia,Echimyidae,Lonchothrix,,1,2.14,138.0384265
+South America,Rodentia,Muridae,Kunsia,,2,2.14,138.0384265
+Africa,Rodentia,Muridae,Otomys,,7,2.15,141.2537545
+North America,Lagomorpha,Ochotonidae,Ochotona,,2,2.15,141.2537545
+South America,Rodentia,Muridae,Scapteromys,,1,2.16,144.5439771
+South America,Rodentia,Octodontidae,Octodontomys,,1,2.18,151.3561248
+Australia,Rodentia,Muridae,Conilurus,,1,2.19,154.8816619
+Africa,Rodentia,Sciuridae,Paraxerus,,3,2.21,162.1810097
+Africa,Rodentia,Sciuridae,Myosciurus,,1,2.22,165.9586907
+South America,Rodentia,Muridae,Chinchillula,,1,2.23,169.8243652
+Africa,Rodentia,Muridae,Nannospalax,,1,2.25,177.827941
+Africa,Rodentia,Muridae,Nesokia,,1,2.25,177.827941
+Africa,Rodentia,Bathyergidae,Georychus,,1,2.26,181.9700859
+Africa,Rodentia,Bathyergidae,Heliophobius,,1,2.26,181.9700859
+Africa,Rodentia,Sciuridae,Funisciurus,,8,2.27,186.2087137
+South America,Rodentia,Muridae,Holochilus,,4,2.27,186.2087137
+South America,Rodentia,Echimyidae,Euryzygomatomys,,1,2.27,186.2087137
+Africa,Macroscelidea,Macroscelididae,Petrodromus,,1,2.27,186.2087137
+South America,Rodentia,Octodontidae,Octodon,,3,2.29,194.98446
+North America,Rodentia,Muridae,Tylomys,,4,2.29,194.98446
+Africa,Insectivora,Erinaceidae,Hemiechinus,,2,2.3,199.5262315
+Africa,Primates,Galagonidae,Galago,,3,2.31,204.1737945
+Africa,Primates,Loridae,Arctocebus,,1,2.32,208.9296131
+Africa,Insectivora,Chrysochloridae,Chrysospalax,,2,2.32,208.9296131
+North America,Rodentia,Muridae,Neotoma,,14,2.33,213.796209
+North America,Rodentia,Sciuridae,Tamiasciurus,,2,2.33,213.796209
+South America,Rodentia,Abrocomidae,Abrocoma,,3,2.33,213.796209
+South America,Rodentia,Muridae,Nectomys,,2,2.34,218.7761624
+Africa,Rodentia,Petromuridae,Petromus,,1,2.35,223.8721139
+South America,Carnivora,Mustelidae,Lyncodon,,1,2.35,223.8721139
+South America,Rodentia,Echimyidae,Diplomys,,3,2.37,234.4228815
+South America,Rodentia,Ctenomyidae,Ctenomys,,38,2.37,234.4228815
+South America,Primates,Callitrichidae,Callithrix,,9,2.37,234.4228815
+South America,Rodentia,Echimyidae,Olallamys,,2,2.38,239.8832919
+South America,Rodentia,Caviidae,Microcavia,,3,2.38,239.8832919
+South America,Rodentia,Echimyidae,Hoplomys,,1,2.38,239.8832919
+South America,Didelphimorphia,Didelphidae,Caluromysiops,,1,2.4,251.1886432
+Africa,Rodentia,Sciuridae,Atlantoxerus,,1,2.4,251.1886432
+South America,Didelphimorphia,Didelphidae,Metachirus,,1,2.41,257.0395783
+North America,Rodentia,Muridae,Neofiber,,1,2.42,263.0267992
+South America,Carnivora,Mustelidae,Mustela,,8,2.43,269.1534804
+South America,Rodentia,Echimyidae,Proechimys,,31,2.43,269.1534804
+North America,Rodentia,Sciuridae,Spermophilus,,22,2.43,269.1534804
+Africa,Rodentia,Sciuridae,Heliosciurus,,4,2.44,275.4228703
+North America,Didelphimorphia,Didelphidae,Caluromys,,3,2.44,275.4228703
+South America,Rodentia,Echimyidae,Thrichomys,,1,2.44,275.4228703
+Australia,Diprotodontia,Petauridae,Petaurus,,4,2.44,275.4228703
+North America,Carnivora,Mustelidae,Spilogale,,2,2.45,281.8382931
+Africa,Carnivora,Herpestidae,Helogale,,2,2.47,295.1209227
+Africa,Primates,Galagonidae,Euoticus,,1,2.48,301.995172
+South America,Rodentia,Echimyidae,Isothrix,,2,2.49,309.0295433
+North America,Xenarthra,Myrmecophagidae,Cyclopes,,1,2.52,331.1311215
+Africa,Carnivora,Mustelidae,Poecilogale,,1,2.53,338.8441561
+Australia,Rodentia,Muridae,Leporillus,,1,2.54,346.7368505
+Africa,Carnivora,Herpestidae,Dologale,,1,2.54,346.7368505
+Australia,Rodentia,Muridae,Uromys,,2,2.55,354.8133892
+North America,Rodentia,Geomyidae,Pappogeomys,,9,2.55,354.8133892
+Africa,Rodentia,Muridae,Tachyoryctes,,2,2.55,354.8133892
+South America,Rodentia,Echimyidae,Echimys,,14,2.56,363.0780548
+North America,Rodentia,Muridae,Hodomys,,1,2.57,371.5352291
+South America,Rodentia,Echimyidae,Makalata,,1,2.6,398.1071706
+South America,Rodentia,Caviidae,Galea,,3,2.62,416.8693835
+North America,Lagomorpha,Leporidae,Brachylagus,,1,2.62,416.8693835
+Australia,Diprotodontia,Petauridae,Dactylopsila,,1,2.63,426.5795188
+Australia,Rodentia,Muridae,Mesembriomys,,2,2.64,436.5158322
+South America,Primates,Callitrichidae,Saguinus,,12,2.66,457.0881896
+Australia,Dasyuromorphia,Myrmecobiidae,Myrmecobius,,1,2.67,467.7351413
+North America,Lagomorpha,Leporidae,Romerolagus,,1,2.68,478.6300923
+South America,Primates,Callitrichidae,Callimico,,1,2.68,478.6300923
+North America,Rodentia,Sciuridae,Sciurus,,24,2.68,478.6300923
+South America,Rodentia,Chinchillidae,Chinchilla,,2,2.69,489.7788194
+South America,Didelphimorphia,Didelphidae,Philander,,2,2.69,489.7788194
+Africa,Carnivora,Viverridae,Poiana,,1,2.7,501.1872336
+North America,Rodentia,Geomyidae,Zygogeomys,,1,2.7,501.1872336
+Africa,Macroscelidea,Macroscelididae,Rhynchocyon,,2,2.71,512.861384
+Australia,Diprotodontia,Potoroidae,Hypsiprymnodon,,1,2.72,524.8074602
+South America,Didelphimorphia,Didelphidae,Lutreolina,,1,2.73,537.0317964
+Australia,Peramelemorphia,Peramelidae,Perameles,,4,2.75,562.3413252
+South America,Rodentia,Echimyidae,Dactylomys,,3,2.75,562.3413252
+Africa,Rodentia,Sciuridae,Protoxerus,,2,2.76,575.4399373
+Africa,Rodentia,Sciuridae,Epixerus,,1,2.77,588.8436554
+South America,Rodentia,Echimyidae,Kannabateomys,,1,2.78,602.5595861
+Australia,Rodentia,Muridae,Hydromys,,1,2.78,602.5595861
+Australia,Rodentia,Sciuridae,Xerus,,4,2.78,602.5595861
+South America,Primates,Callitrichidae,Leontopithecus,,3,2.79,616.5950019
+Africa,Insectivora,Erinaceidae,Atelerix,,3,2.79,616.5950019
+Africa,Insectivora,Tenrecidae,Potamogale,,1,2.82,660.693448
+Africa,Carnivora,Herpestidae,Galerella,,2,2.82,660.693448
+Australia,Peramelemorphia,Peramelidae,Macrotis,,2,2.84,691.8309709
+Africa,Carnivora,Herpestidae,Suricata,,1,2.86,724.4359601
+Africa,Rodentia,Muridae,Lophiomys,,1,2.88,758.577575
+Africa,Rodentia,Anomaluridae,Anomalurus,,3,2.88,758.577575
+South America,Rodentia,Caviidae,Kerodon,,1,2.9,794.3282347
+Australia,Peramelemorphia,Peramelidae,Isoodon,,3,2.91,812.8305162
+South America,Rodentia,Erethizontidae,Echinoprocta,,1,2.92,831.7637711
+Africa,Carnivora,Herpestidae,Cynictis,,1,2.92,831.7637711
+South America,Rodentia,Dasyproctidae,Myoprocta,,2,2.94,870.96359
+Australia,Diprotodontia,Psuedocheiridae,Pseudocheirus,,1,2.95,891.2509381
+Africa,Carnivora,Mustelidae,Ictonyx,,2,2.95,891.2509381
+South America,Primates,Cebidae,Aotus,,10,2.96,912.0108394
+North America,Didelphimorphia,Didelphidae,Chironectes,,1,2.98,954.992586
+Australia,Diprotodontia,Psuedocheiridae,Hemibelideus,,1,2.98,954.992586
+South America,Primates,Cebidae,Callicebus,,13,2.99,977.237221
+North America,Rodentia,Muridae,Ondatra,,1,2.99,977.237221
+South America,Rodentia,Erethizontidae,Sphiggurus,,4,3,1000
+North America,Rodentia,Aplodontidae,Aplodontia,,1,3,1000
+Africa,Primates,Galagonidae,Otolemur,,1,3,1000
+North America,Carnivora,Procyonidae,Bassariscus,,2,3,1000
+Australia,Diprotodontia,Psuedocheiridae,Pseudochirops,,1,3.04,1096.478196
+Africa,Primates,Loridae,Perodicticus,,1,3.04,1096.478196
+Australia,Peramelemorphia,Peroryctidae,Echymipera,,1,3.04,1096.478196
+Australia,Diprotodontia,Psuedocheiridae,Pseudochirulus,,1,3.05,1122.018454
+Africa,Rodentia,Muridae,Cricetomys,,2,3.06,1148.153621
+North America,Lagomorpha,Leporidae,Sylvilagus,,11,3.09,1230.268771
+South America,Carnivora,Procyonidae,Bassaricyon,,3,3.1,1258.925412
+Africa,Carnivora,Herpestidae,Crossarchus,,1,3.1,1258.925412
+Africa,Primates,Cercopithecidae,Miopithecus,,1,3.1,1258.925412
+South America,Didelphimorphia,Didelphidae,Didelphis,,4,3.1,1258.925412
+North America,Carnivora,Mustelidae,Mephitis,,2,3.11,1288.249552
+South America,Rodentia,Echimyidae,Chaetomys,,1,3.11,1288.249552
+Australia,Diprotodontia,Psuedocheiridae,Petauroides,,1,3.11,1288.249552
+South America,Xenarthra,Dasypodidae,Tolypeutes,,2,3.13,1348.962883
+South America,Carnivora,Procyonidae,Nasuella,,1,3.13,1348.962883
+Australia,Dasyuromorphia,Dasyuridae,Dasyurus,,4,3.13,1348.962883
+South America,Xenarthra,Dasypodidae,Zaedyus,,1,3.14,1380.384265
+Australia,Diprotodontia,Potoroidae,Potorous,,2,3.16,1445.439771
+Australia,Diprotodontia,Potoroidae,Bettongia,,3,3.17,1479.108388
+Australia,Monotremata,Ornithorhynchidae,Ornithorhyncus,,1,3.17,1479.108388
+Africa,Rodentia,Anomaluridae,Idiurus,,1,3.2,1584.893192
+North America,Carnivora,Procyonidae,Potos,,1,3.21,1621.810097
+Africa,Carnivora,Herpestidae,Paracynictis,,1,3.21,1621.810097
+Australia,Diprotodontia,Psuedocheiridae,Petropseudes,,1,3.21,1621.810097
+Australia,Diprotodontia,Phalangeridae,Wyulda,,1,3.22,1659.586907
+Australia,Diprotodontia,Macropodidae,Lagostrophus,,1,3.23,1698.243652
+South America,Rodentia,Chinchillidae,Lagidium,,3,3.24,1737.800829
+Africa,Lagomorpha,Leporidae,Bunolagus,,1,3.24,1737.800829
+South America,Carnivora,Mustelidae,Galictis,,2,3.25,1778.27941
+North America,Carnivora,Mustelidae,Martes,,2,3.25,1778.27941
+Australia,Diprotodontia,Macropodidae,Lagorchestes,,3,3.25,1778.27941
+Africa,Carnivora,Viverridae,Genetta,,9,3.27,1862.087137
+Australia,Diprotodontia,Phalangeridae,Phalanger,,1,3.27,1862.087137
+Africa,Carnivora,Herpestidae,Mungos,,1,3.28,1905.460718
+Africa,Carnivora,Herpestidae,Bdeogale,,2,3.29,1949.8446
+Africa,Carnivora,Viverridae,Nandinia,,1,3.3,1995.262315
+Africa,Carnivora,Herpestidae,Liberiictis,,1,3.33,2137.96209
+Africa,Lagomorpha,Leporidae,Oryctolagus,,1,3.33,2137.96209
+South America,Xenarthra,Dasypodidae,Chaetophractus,,3,3.33,2137.96209
+Africa,Lagomorpha,Leporidae,Pronolagus,,3,3.36,2290.867653
+Africa,Lagomorpha,Leporidae,Poelagus,,1,3.4,2511.886432
+Africa,Carnivora,Herpestidae,Rhynchogale,,1,3.4,2511.886432
+North America,Lagomorpha,Leporidae,Lepus,,11,3.4,2511.886432
+South America,Primates,Cebidae,Cebus,,4,3.42,2630.267992
+Africa,Hyracoidea,Procaviidae,Heterohyrax,,1,3.42,2630.267992
+Africa,Carnivora,Canidae,Vulpes,,6,3.42,2630.267992
+South America,Xenarthra,Dasypodidae,Dasypus,,6,3.45,2818.382931
+Africa,Carnivora,Herpestidae,Herpestes,,2,3.47,2951.209227
+South America,Primates,Cebidae,Chiropotes,,2,3.47,2951.209227
+Africa,Hyracoidea,Procaviidae,Dendrohyrax,,1,3.47,2951.209227
+Africa,Carnivora,Viverridae,Osbornictis,,1,3.48,3019.95172
+Africa,Hyracoidea,Procaviidae,Procavia,,1,3.48,3019.95172
+Australia,Diprotodontia,Phalangeridae,Trichosurus,,2,3.48,3019.95172
+South America,Carnivora,Felidae,Leopardus,,3,3.49,3090.295433
+South America,Rodentia,Dasyproctidae,Dasyprocta,,9,3.5,3162.27766
+Africa,Rodentia,Pedetidae,Pedetes,,1,3.5,3162.27766
+Africa,Carnivora,Felidae,Felis,,4,3.5,3162.27766
+South America,Carnivora,Felidae,Oncifelis,,3,3.51,3235.936569
+South America,Rodentia,Erethizontidae,Coendou,,4,3.51,3235.936569
+Australia,Diprotodontia,Macropodidae,Setonix,,1,3.51,3235.936569
+Australia,Diprotodontia,Potoroidae,Aepyprymnus,,1,3.51,3235.936569
+Africa,Carnivora,Herpestidae,Atilax,,1,3.52,3311.311215
+Africa,Rodentia,Hystricidae,Atherurus,,1,3.52,3311.311215
+North America,Carnivora,Canidae,Alopex,,1,3.54,3467.368505
+South America,Xenarthra,Dasypodidae,Cabassous,,4,3.54,3467.368505
+Africa,Carnivora,Herpestidae,Ichneumia,,1,3.54,3467.368505
+South America,Rodentia,Caviidae,Dolichotis,,2,3.55,3548.133892
+South America,Carnivora,Canidae,Urocyon,,1,3.58,3801.893963
+North America,Carnivora,Mustelidae,Eira,,1,3.59,3890.45145
+South America,Carnivora,Procyonidae,Nasua,,2,3.59,3890.45145
+Australia,Diprotodontia,Macropodidae,Petrogale,,11,3.6,3981.071706
+South America,Xenarthra,Bradypodidae,Bradypus,,3,3.6,3981.071706
+Africa,Carnivora,Canidae,Otocyon,,1,3.62,4168.693835
+Africa,Primates,Cercopithecidae,Cercopithecus,,13,3.62,4168.693835
+South America,Xenarthra,Megalonychidae,Choloepus,,2,3.63,4265.795188
+Africa,Artiodactyla,Bovidae,Neotragus,,3,3.63,4265.795188
+Australia,Monotremata,Tachyglossidae,Tachyglossus,,1,3.65,4466.835922
+Africa,Rodentia,Thryonomyidae,Thryonomys,,2,3.66,4570.881896
+South America,Carnivora,Procyonidae,Procyon,,3,3.66,4570.881896
+South America,Rodentia,Chinchillidae,Lagostomus,,1,3.67,4677.351413
+South America,Primates,Cebidae,Cacajao,,2,3.67,4677.351413
+Africa,Primates,Cercopithecidae,Allenopithecus,,1,3.68,4786.300923
+Africa,Primates,Cercopithecidae,Chlorocebus,,1,3.68,4786.300923
+South America,Xenarthra,Dasypodidae,Euphractus,,1,3.68,4786.300923
+South America,Xenarthra,Myrmecophagidae,Tamandua,,2,3.68,4786.300923
+South America,Primates,Cebidae,Ateles,,6,3.69,4897.788194
+Africa,Artiodactyla,Bovidae,Madoqua,,3,3.7,5011.872336
+Australia,Diprotodontia,Macropodidae,Thylogale,,3,3.71,5128.61384
+South America,Carnivora,Canidae,Cerdocyon,,1,3.72,5248.074602
+Africa,Pholidota,Manidae,Manis,,4,3.77,5888.436554
+Africa,Primates,Cercopithecidae,Procolobus,,2,3.78,6025.595861
+South America,Carnivora,Canidae,Speothos,,1,3.78,6025.595861
+Australia,Diprotodontia,Macropodidae,Onychogalea,,2,3.78,6025.595861
+Australia,Diprotodontia,Phalangeridae,Spilocuscus,,1,3.81,6456.54229
+South America,Primates,Cebidae,Lagothrix,,2,3.82,6606.93448
+Africa,Carnivora,Mustelidae,Lutra,,2,3.82,6606.93448
+South America,Primates,Cebidae,Alouatta,,7,3.83,6760.829754
+South America,Rodentia,Myocastoridae,Myocastor,,1,3.84,6918.309709
+Africa,Primates,Cercopithecidae,Macaca,,1,3.85,7079.457844
+North America,Rodentia,Erethizontidae,Erethizon,,1,3.85,7079.457844
+North America,Carnivora,Mustelidae,Taxidea,,1,3.85,7079.457844
+Africa,Primates,Cercopithecidae,Erythrocebus,,1,3.86,7244.359601
+North America,Carnivora,Mustelidae,Lontra,,3,3.87,7413.102413
+Africa,Primates,Cercopithecidae,Colobus,,3,3.88,7585.77575
+Africa,Primates,Cercopithecidae,Lophocebus,,1,3.89,7762.471166
+South America,Carnivora,Canidae,Atelocynus,,1,3.89,7762.471166
+Africa,Primates,Cercopithecidae,Cercocebus,,2,3.89,7762.471166
+North America,Rodentia,Agoutidae,Agouti,,2,3.9,7943.282347
+Australia,Dasyuromorphia,Dasyuridae,Sarcophilus,,1,3.9,7943.282347
+Africa,Carnivora,Mustelidae,Mellivora,,1,3.9,7943.282347
+Australia,Diprotodontia,Macropodidae,Dendrolagus,,2,3.93,8511.380382
+Australia,Diprotodontia,Vombatidae,Lasiorhinus,,2,3.93,8511.380382
+North America,Carnivora,Felidae,Herpailurus,,1,3.95,8912.509381
+North America,Carnivora,Felidae,Lynx,,2,3.96,9120.108394
+South America,Carnivora,Felidae,Oreailurus,,1,3.96,9120.108394
+South America,Artiodactyla,Cervidae,Pudu,,2,3.99,9772.37221
+Africa,Carnivora,Hyaenidae,Proteles,,1,4,10000
+Africa,Artiodactyla,Bovidae,Raphicerus,,3,4,10000
+Africa,Artiodactyla,Bovidae,Dorcatragus,,1,4.01,10232.92992
+Australia,Diprotodontia,Phascolarctidae,Phascolarctos,,1,4.01,10232.92992
+Africa,Carnivora,Felidae,Profelis,,1,4.03,10715.19305
+Africa,Artiodactyla,Tragulidae,Hyemoschus,,1,4.04,10964.78196
+Africa,Carnivora,Viverridae,Civettictis,,1,4.08,12022.64435
+Africa,Carnivora,Felidae,Leptailurus,,1,4.08,12022.64435
+South America,Rodentia,Dinomyidae,Dinomys,,1,4.1,12589.25412
+Africa,Carnivora,Canidae,Canis,,7,4.1,12589.25412
+Africa,Artiodactyla,Bovidae,Oreotragus,,1,4.11,12882.49552
+South America,Primates,Cebidae,Brachyteles,,1,4.13,13489.62883
+Africa,Carnivora,Felidae,Caracal,,1,4.14,13803.84265
+North America,Rodentia,Castoridae,Castor,,1,4.16,14454.39771
+North America,Carnivora,Mustelidae,Gulo,,1,4.16,14454.39771
+Australia,Diprotodontia,Macropodidae,Wallabia,,1,4.18,15135.61248
+Australia,Diprotodontia,Macropodidae,Macropus,,13,4.18,15135.61248
+Africa,Primates,Cercopithecidae,Mandrillus,,2,4.22,16595.86907
+Africa,Rodentia,Hystricidae,Hystrix,,2,4.22,16595.86907
+Africa,Primates,Cercopithecidae,Theropithecus,,1,4.23,16982.43652
+Africa,Artiodactyla,Bovidae,Ourebia,,1,4.24,17378.00829
+Africa,Artiodactyla,Bovidae,Cephalophus,,17,4.26,18197.00859
+North America,Artiodactyla,Cervidae,Mazama,,6,4.28,19054.60718
+Africa,Artiodactyla,Bovidae,Sylvicapra,,1,4.29,19498.446
+Africa,Artiodactyla,Bovidae,Pelea,,1,4.3,19952.62315
+Africa,Primates,Cercopithecidae,Papio,,1,4.33,21379.6209
+Africa,Carnivora,Mustelidae,Aonyx,,2,4.33,21379.6209
+South America,Artiodactyla,Tayassuidae,Pecari,,1,4.33,21379.6209
+Africa,Carnivora,Canidae,Lycaon,,1,4.34,21877.61624
+North America,Xenarthra,Myrmecophagidae,Myrmecophaga,,1,4.35,22387.21139
+South America,Carnivora,Canidae,Chrysocyon,,1,4.37,23442.28815
+South America,Carnivora,Mustelidae,Pteronura,,1,4.38,23988.32919
+Australia,Diprotodontia,Vombatidae,Vombatus,,1,4.41,25703.95783
+Africa,Artiodactyla,Bovidae,Ammodorcas,,1,4.45,28183.82931
+Africa,Artiodactyla,Bovidae,Gazella,,9,4.48,30199.5172
+Africa,Carnivora,Hyaenidae,Parahyaena,,1,4.51,32359.36569
+North America,Artiodactyla,Tayassuidae,Tayassu,,1,4.51,32359.36569
+South America,Artiodactyla,Tayassuidae,Catagonus,,1,4.55,35481.33892
+Africa,Artiodactyla,Bovidae,Litocranius,,1,4.58,38018.93963
+Africa,Artiodactyla,Bovidae,Antidorcas,,1,4.59,38904.5145
+Africa,Primates,Hominidae,Pan,,2,4.59,38904.5145
+South America,Artiodactyla,Cervidae,Ozotoceros,,1,4.6,39810.71706
+Africa,Artiodactyla,Bovidae,Redunca,,3,4.63,42657.95188
+South America,Xenarthra,Dasypodidae,Priodontes,,1,4.66,45708.81896
+Africa,Carnivora,Hyaenidae,Hyaena,,1,4.66,45708.81896
+North America,Artiodactyla,Antilocapridae,Antilocapra,,1,4.66,45708.81896
+South America,Artiodactyla,Camelidae,Vicugna,,1,4.68,47863.00923
+Australia,Artiodactyla,Cervidae,Dama,,1,4.69,48977.88194
+Australia,Artiodactyla,Cervidae,Axis,,2,4.69,48977.88194
+Africa,Carnivora,Felidae,Acinonyx,,1,4.7,50118.72336
+South America,Carnivora,Felidae,Puma,,1,4.71,51286.1384
+Africa,Tubulidentata,Orycteropodidae,Orycteropus,,1,4.72,52480.74602
+Africa,Artiodactyla,Bovidae,Aepyceros,,1,4.72,52480.74602
+North America,Artiodactyla,Cervidae,Odocoileus,,2,4.74,54954.08739
+Australia,Artiodactyla,Bovidae,Capra,,2,4.76,57543.99373
+South America,Rodentia,Hydrochaeridae,Hydrochaeris,,1,4.8,63095.73445
+Africa,Carnivora,Hyaenidae,Crocuta,,1,4.8,63095.73445
+Africa,Artiodactyla,Cervidae,Cervus,,3,4.8,63095.73445
+North America,Artiodactyla,Bovidae,Ovis,,2,4.81,64565.4229
+South America,Artiodactyla,Cervidae,Hippocamelus,,2,4.84,69183.09709
+Africa,Artiodactyla,Bovidae,Addax,,1,4.85,70794.57844
+Africa,Artiodactyla,Suidae,Potamochoerus,,1,4.85,70794.57844
+Africa,Artiodactyla,Suidae,Phacochoerus,,1,4.85,70794.57844
+North America,Artiodactyla,Bovidae,Oreamnos,,1,4.86,72443.59601
+Africa,Artiodactyla,Bovidae,Ammotragus,,1,4.92,83176.37711
+South America,Artiodactyla,Camelidae,Lama,,1,4.93,85113.80382
+North America,Artiodactyla,Cervidae,Rangifer,,1,4.93,85113.80382
+Australia,Artiodactyla,Suidae,Sus,,1,4.94,87096.359
+South America,Artiodactyla,Cervidae,Blastocerus,,1,4.94,87096.359
+Africa,Artiodactyla,Bovidae,Damaliscus,,3,4.94,87096.359
+Africa,Carnivora,Felidae,Panthera,,3,4.98,95499.2586
+Africa,Artiodactyla,Bovidae,Tragelaphus,,7,5.08,120226.4435
+Africa,Primates,Hominidae,Gorilla,,1,5.09,123026.8771
+Africa,Artiodactyla,Suidae,Hylochoerus,,1,5.15,141253.7545
+South America,Carnivora,Ursidae,Tremarctos,,1,5.15,141253.7545
+North America,Carnivora,Ursidae,Ursus,,3,5.23,169824.3652
+Africa,Artiodactyla,Bovidae,Alcelaphus,,1,5.23,169824.3652
+Africa,Artiodactyla,Bovidae,Sigmoceros,,1,5.23,169824.3652
+Africa,Artiodactyla,Bovidae,Connochaetes,,2,5.26,181970.0859
+Africa,Artiodactyla,Bovidae,Oryx,,2,5.26,181970.0859
+South America,Perissodactyla,Tapiridae,Tapirus,,3,5.32,208929.6131
+Africa,Artiodactyla,Giraffidae,Okapia,,1,5.36,229086.7653
+Africa,Artiodactyla,Hippopotamidae,Hexaprotodon,,1,5.37,234422.8815
+Africa,Artiodactyla,Bovidae,Hippotragus,,2,5.39,245470.8916
+Australia,Perissodactyla,Equidae,Equus,,4,5.49,309029.5433
+North America,Artiodactyla,Cervidae,Alces,,1,5.56,363078.0548
+North America,Artiodactyla,Bovidae,Ovibos,,1,5.57,371535.2291
+Australia,Artiodactyla,Bovidae,Bos,,1,5.68,478630.0923
+Africa,Artiodactyla,Bovidae,Taurotragus,,1,5.76,575439.9373
+North America,Artiodactyla,Bovidae,Bison,,1,5.76,575439.9373
+Africa,Artiodactyla,Bovidae,Syncerus,,1,5.76,575439.9373
+Australia,Artiodactyla,Camelidae,Camelus,,1,5.9,794328.2347
+Africa,Artiodactyla,Bovidae,Bubalus,,1,5.92,831763.7711
+Africa,Artiodactyla,Giraffidae,Giraffa,,1,5.95,891250.9381
+Africa,Perissodactyla,Rhinocerotidae,Diceros,,1,6.07,1174897.555
+Africa,Artiodactyla,Hippopotamidae,Hippopotamus,,1,6.15,1412537.545
+Africa,Perissodactyla,Rhinocerotidae,Ceratotherium,,1,6.47,2951209.227
+Africa,Proboscidea,Elephantidae,Loxodonta,,1,6.6,3981071.706
