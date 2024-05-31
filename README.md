@@ -49,7 +49,7 @@ This repository contains the code required to reproduce the analyses used in the
     *   `src/metabolic_constants.nb`: Metabolic constants used to parameterize the timescales associated with growth, reproduction, and mortality of the plant resource, both mammalian herbivore species, and the mammalian predator species.  
     *   `src/allometric_functions_predpersp.nb`: Defines functions related to growth, reproduction, and mortality of all species in the motif, integrating the metabolic constants.  
     *   `src/analysis_functions.nb`: Defines numerous functions relating to the analysis of tri-trophic subsidy and competition systems.  
-    *   `src/ppmr_primary.nb`: A minimal notebook that integrates the measured *Predator Prey Mass Relationship* that is evaluated in `ppmr_fit.jl`, and defines the expected prey mass given a predator mass $${\rm E}\{M_C|M_P\}$$. This incorporates the output of the `ppmr_fit.jl` code:  
+    *   `src/ppmr_primary.nb`: A minimal notebook that integrates the measured *Predator Prey Mass Relationship* that is evaluated in `ppmr_fit.jl`, and defines the expected prey mass given a predator mass $E\{M_C|M_P\}$. This incorporates the output of the `ppmr_fit.jl` code:  
         *   `mammalian_fit_table.csv`: A table of the best-fit regression to log(prey mass) ~ log(predator mass)
         *   `mammalian_mass.csv`: A list of mammalian predator and prey masses used to find the best-fit PPMR  
 *   The notebooks incorporate various data files:  
