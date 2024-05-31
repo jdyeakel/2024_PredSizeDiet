@@ -61,11 +61,13 @@ This repository contains the code required to reproduce the analyses used in the
     *   `diet_results.csv`: Locality information for Pleistocene predators alongside prey carbon isotopic range as both an absolute value (carn_range; permil) and a relative (unitless) value (ratio: predator isotopic range / prey isotopic range). The prey isotopic range is denoted as herb_range. Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source  
 *   `ppmr_fit.jl`: Code used to measure and generated the predator-prey mass relationship used in the mathematica notebooks.  
 *   `diet_analyses.R`: Code used to generate the empirical diet breadth measures used in the Mathematica notebooks and stored in `diet_sinclair_results.csv` and `diet_results.csv`  
-*   `contemp_mammalian_analysis.R`: Code to calculate the average body mass of both contemporary and Cenozoic carnivorans. Incorporates data from `ontemp_mammal_mass_smith_2004.csv` (Smith et al., 2004) and `carnivore_mass_MoM.csv` (Smith et al., 2003).  
+*   `contemp_mammalian_analysis.R`: Code to calculate the average body mass of both contemporary and Cenozoic carnivorans. Incorporates data from `contemp_mammal_mass_smith_2004.csv` (Smith et al., 2004) and `carnivore_mass_MoM.csv` (Smith et al., 2003).  
+    *   `contemp_mammal_mass_smith_2004.csv`: Contemporary mammal body size and locality information (Smith et al. 2004). Columns - C1: continent; C2: order; C3: family; genus; C4: genus_age; C5: richness; C6: mass_mean_log10; C7: mass_mean_grams  
+    *   `carnivore_mass_MoM.csv`: Cenozoic carnivoran body size information extract from the Mass of Mammals Database (MoM v.4.1) (Smith et al. 2003): Columns - C1: Order; C2: Family; C3: Genus; C4: Species; C5: Mass_g  
 
 >   Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPC1C2overWPhi.m` and `fixedpointwsPC1C2Ratio.m`.
 
-### References
+## References
 *   Damuth, J. 1981. Population density and body size in mammals. Nature 290:699–700.  
 *   Carbone, C., and J. L. Gittleman. 2002. A common rule for the scaling of carnivore density. Science 295:2273–2276.
 *   Hayward, M. 2006. Prey preferences of the spotted hyaena (*Crocuta crocuta*) and degree of dietary overlap with the lion (*Panthera leo*). J. Zoology 270:606–614.  
