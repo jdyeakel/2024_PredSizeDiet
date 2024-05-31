@@ -1,6 +1,5 @@
 # Exploring ecological drivers of mammalian predator size and diet across the Cenozoic
 
-##
 J.D. Yeakel,
 M.C. Hutchinson,
 C.P. Kempes,
