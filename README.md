@@ -61,8 +61,9 @@ This repository contains the code required to reproduce the analyses used in the
     *   `diet_results.csv`: Locality information for Pleistocene predators alongside prey carbon isotopic range as both an absolute value (carn_range; permil) and a relative (unitless) value (ratio: predator isotopic range / prey isotopic range). The prey isotopic range is denoted as herb_range. Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source  
 *   `ppmr_fit.jl`: Code used to measure and generated the predator-prey mass relationship used in the mathematica notebooks.  
 *   `diet_analyses.R`: Code used to generate the empirical diet breadth measures used in the Mathematica notebooks and stored in `diet_sinclair_results.csv` and `diet_results.csv`  
+*   `contemp_mammalian_analysis.R`: Code to calculate the average body mass of both contemporary and Cenozoic carnivorans. Incorporates data from `ontemp_mammal_mass_smith_2004.csv` (Smith et al., 2004) and `carnivore_mass_MoM.csv` (Smith et al., 2003).  
 
-Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPC1C2overWPhi.m` and `fixedpointwsPC1C2Ratio.m`.
+>   Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPC1C2overWPhi.m` and `fixedpointwsPC1C2Ratio.m`.
 
 ### References
 *   Damuth, J. 1981. Population density and body size in mammals. Nature 290:699–700.  
@@ -74,3 +75,5 @@ Note: There are a few code blocks in the Mathematica notebooks that take a long 
 *   Hayward, M. W., and G. I. Kerley. 2005. Prey preferences of the lion (*Panthera leo*). Journal of zoology 267:309–322.  
 *   Hayward, M. W., J. O'Brien, M. Hofmeyr, and G. I. Kerley. 2006c. Prey preferences of the african wild dog *Lycaon pictus* (canidae: Carnivora): ecological requirements for conservation. Journal of Mammalogy 87:1122–1131  
 *   Sinclair, A.R.E., Mduma, S. & Brashares, J.S. (2003). Patterns of predation in a diverse predator–prey system. Nature, 425, 288–290  
+*   Smith, F., Brown, J.H., Haskell, J., Lyons, S., Alroy, J., Charnov, E., Dayan, T., Enquist, B., Morgan Ernest, S. & Hadly, E. (2004). Similarity of mammalian body size across the taxonomic hierarchy and across space and time. Am. Nat., 163, 672–691.  
+*   Smith, F.A., Lyons, S.K., Ernest, S.M., Jones, K.E., Kaufman, D.M., Dayan, T., Marquet, P.A., Brown, J.H. & Haskell, J.P. (2003). Body mass of late quaternary mammals: ecological archives e084-094. Ecology, 84, 3403–3403.
