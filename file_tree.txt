@@ -1,6 +1,4 @@
-# Exploring ecological drivers of mammalian predator size and diet across the Cenozoic
-
-## File Tree
+.
 ├── 1_subsidy.nb
 ├── 2024_PCR.code-workspace
 ├── 2_competition.nb
@@ -28,3 +26,5 @@
     ├── analysis_functions.nb
     ├── metabolic_constants.nb
     └── ppmr_primary.nb
+
+3 directories, 25 files
