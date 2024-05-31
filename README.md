@@ -53,13 +53,24 @@ This repository contains the code required to reproduce the analyses used in the
         *   `mammalian_fit_table.csv`: A table of the best-fit regression to log(prey mass) ~ log(predator mass)
         *   `mammalian_mass.csv`: A list of mammalian predator and prey masses used to find the best-fit PPMR  
 *   The notebooks incorporate various data files:  
-    *   `densitydata.csv`: Empirical mammalian herbivore mass-density data. Mammalian density data by body size from Damuth et al. (1981). Columns - C1: Body mass (grams); C2: Density (inds/m^2)  
-    *   `carnivoredensities_trimmed.csv`: Empirical mammalian carnivore mass-density data. Columns - C1: Body mass (grams); C2: Density (inds/m^2)  
+    *   `densitydata.csv`: Mammalian density data by body size from Damuth et al. (1981). Columns - C1: Body mass (grams); C2: Density (inds/m^2)  
+    *   `carnivoredensities_trimmed.csv`: Mammalian carnivore density data by body size from Carbon & Gittleman (2002). Columns - C1: Body mass (grams); C2: Density (inds/m^2)  
     *   `data_Hayward_all.csv`: Prey preferences and dietary data for large-bodied carnivores collated from Hayward, 2006; Hayward et al., 2006a,b; Hayward and Kerley, 2008, 2005; Hayward et al., 2006c. Columns - C1: Predator; C2: Predbodymasskg; C3: Prey; C4: JacobsIndex; C5: JI_SE; C6: PercentOfKills; C7: SE; C8: Preybodymasskg34adultfemalemass; C9: Preybodymasskg; C10: HerdSize; C11: HabitatDensity; C12: ThreatToPredator. See specific references for details.  
-    *   `data_delong_mammal.csv`: Predator and prey mass relationships for mammals in the FoRAGE database (Uiterwaal et al., 2018). C1: Species_name; C2: Pred_mass_mg; C3: Pred_mass_kg; C4: Prey_mass_mg; C5: Prey_mass_kg  
-    *   `diet_sinclair_results.csv`: Locality information for contempoary predators alongside prey body mass range as both an absolute value (carn_range; Kg) and a relative (unitless) value (ratio: prey body mass range / total prey range). The total prey range is denoted as herb_range. C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source
-    *   `diet_results.csv`: Locality information for Pleistocene predators alongside prey carbon isotopic range as both an absolute value (carn_range; permil) and a relative (unitless) value (ratio: predator isotopic range / prey isotopic range). The prey isotopic range is denoted as herb_range. C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source  
+    *   `data_delong_mammal.csv`: Predator and prey mass relationships for mammals in the FoRAGE database (Uiterwaal et al., 2018). Columns - C1: Species_name; C2: Pred_mass_mg; C3: Pred_mass_kg; C4: Prey_mass_mg; C5: Prey_mass_kg  
+    *   `diet_sinclair_results.csv`: Locality information for contempoary predators alongside prey body mass range as both an absolute value (carn_range; Kg) and a relative (unitless) value (ratio: prey body mass range / total prey range). The total prey range is denoted as herb_range. Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source
+    *   `diet_results.csv`: Locality information for Pleistocene predators alongside prey carbon isotopic range as both an absolute value (carn_range; permil) and a relative (unitless) value (ratio: predator isotopic range / prey isotopic range). The prey isotopic range is denoted as herb_range. Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source  
 *   `ppmr_fit.jl`: Code used to measure and generated the predator-prey mass relationship used in the mathematica notebooks.  
 *   `diet_analyses.R`: Code used to generate the empirical diet breadth measures used in the Mathematica notebooks and stored in `diet_sinclair_results.csv` and `diet_results.csv`  
 
 Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPC1C2overWPhi.m` and `fixedpointwsPC1C2Ratio.m`.
+
+### References
+*   Damuth, J. 1981. Population density and body size in mammals. Nature 290:699–700.  
+*   Carbone, C., and J. L. Gittleman. 2002. A common rule for the scaling of carnivore density. Science 295:2273–2276.
+*   Hayward, M. 2006. Prey preferences of the spotted hyaena (*Crocuta crocuta*) and degree of dietary overlap with the lion (*Panthera leo*). J. Zoology 270:606–614.  
+*   Hayward, M., P. Henschel, J. O'Brien, M. Hofmeyr, G. Balme, and G. I. Kerley. 2006a. Prey preferences of the leopard (*Panthera pardus*). Journal of Zoology 270:298–313.  
+*   Hayward, M., M. Hofmeyr, J. O'brien, and G. I. Kerley. 2006b. Prey preferences of the cheetah (*Acinonyx jubatus*)(felidae: Carnivora): morphological limitations or the need to capture rapidly consumable prey before kleptoparasites arrive? Journal of Zoology 270:615–627.  
+*   Hayward, M. W., and G. Kerley. 2008. Prey preferences and dietary overlap amongst Africa's large predators. S. African J. Wild. Res. 38:93–108.  
+*   Hayward, M. W., and G. I. Kerley. 2005. Prey preferences of the lion (*Panthera leo*). Journal of zoology 267:309–322.  
+*   Hayward, M. W., J. O'Brien, M. Hofmeyr, and G. I. Kerley. 2006c. Prey preferences of the african wild dog *Lycaon pictus* (canidae: Carnivora): ecological requirements for conservation. Journal of Mammalogy 87:1122–1131  
+*   Sinclair, A.R.E., Mduma, S. & Brashares, J.S. (2003). Patterns of predation in a diverse predator–prey system. Nature, 425, 288–290  
