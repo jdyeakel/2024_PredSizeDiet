@@ -19,7 +19,7 @@
 |     |--── fixedpointwsPC1C2overWPhi.m  
 |     |--── mammalian_fit_table.csv  
 |     |--── mammalian_isotopes_all.xlsx  
-|     |__── mammalian_mass.csv  
+|     |--── mammalian_mass.csv  
 |--── diet_analysis.R  
 |--── file_tree.md  
 |--── file_tree.txt  
