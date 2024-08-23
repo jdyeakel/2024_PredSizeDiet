@@ -1,7 +1,7 @@
 .
 ├── 1_subsidy.nb
 ├── 2024_PCR.code-workspace
-├── 2_competition.nb
+├── 2_competition_gen.nb
 ├── README.md
 ├── contemp_mammal_analysis.R
 ├── data
@@ -13,8 +13,8 @@
 │   ├── densitydata.csv
 │   ├── diet_results.csv
 │   ├── diet_sinclair_results.csv
-│   ├── fixedpointwsPC1C2Ratio.m
-│   ├── fixedpointwsPC1C2overWPhi.m
+│   ├── fixedpointwsPH1H2Ratio.m
+│   ├── fixedpointwsPH1H2overWPhi.m
 │   ├── mammalian_fit_table.csv
 │   ├── mammalian_isotopes_all.xlsx
 │   └── mammalian_mass.csv

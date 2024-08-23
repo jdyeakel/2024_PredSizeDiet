@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     57611,       1435]
-NotebookOptionsPosition[     56118,       1409]
-NotebookOutlinePosition[     56517,       1425]
-CellTagsIndexPosition[     56474,       1422]
+NotebookDataLength[     58252,       1440]
+NotebookOptionsPosition[     56758,       1414]
+NotebookOutlinePosition[     57157,       1430]
+CellTagsIndexPosition[     57114,       1427]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -295,250 +295,250 @@ not currently in use.\
 45c60704e0cd"],
 
 Cell[BoxData[
- RowBox[{
+ RowBox[{"(*", 
   RowBox[{
-   RowBox[{"ShittyDetectThreshold", "[", 
-    RowBox[{"DensitySol_", ",", "wvalue_", ",", "phivalue_"}], "]"}], ":=", 
-   "\[IndentingNewLine]", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"Sol", "=", " ", "DensitySol"}], "}"}], ",", 
-     "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ShittyDetectThreshold", "[", 
+     RowBox[{"DensitySol_", ",", "wvalue_", ",", "phivalue_"}], "]"}], ":=", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Module", "[", 
      RowBox[{
-      RowBox[{"diffSol", " ", "=", " ", 
-       RowBox[{"Transpose", "[", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"Table", "[", 
-           RowBox[{
-            RowBox[{"10", "^", "i"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"i", ",", "0", ",", 
-              RowBox[{"7.5", "-", "0.01"}], ",", "0.01"}], "}"}]}], "]"}], 
-          ",", 
+      RowBox[{"{", 
+       RowBox[{"Sol", "=", " ", "DensitySol"}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"diffSol", " ", "=", " ", 
+        RowBox[{"Transpose", "[", 
+         RowBox[{"{", 
           RowBox[{
-           RowBox[{"Differences", "[", 
-            RowBox[{"Table", "[", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"Abs", "[", 
-                RowBox[{
-                 RowBox[{"(", "Sol", ")"}], "/.", 
-                 RowBox[{"{", 
-                  RowBox[{
-                   RowBox[{"w", "->", "wvalue"}], ",", 
-                   RowBox[{"\[Phi]", "->", "phivalue"}]}], "}"}]}], "]"}], "/.", 
-               RowBox[{"Mass", "->", 
-                RowBox[{"10", "^", "i"}]}]}], ",", 
-              RowBox[{"{", 
-               RowBox[{"i", ",", "0", ",", "7.5", ",", "0.01"}], "}"}]}], 
-             "]"}], "]"}], "*", 
            RowBox[{"Table", "[", 
             RowBox[{
              RowBox[{"10", "^", "i"}], ",", 
              RowBox[{"{", 
               RowBox[{"i", ",", "0", ",", 
-               RowBox[{"7.5", "-", "0.01"}], ",", "0.01"}], "}"}]}], 
-            "]"}]}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"diffSolMultDiff", " ", "=", " ", 
-       RowBox[{"Transpose", "[", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"Table", "[", 
+               RowBox[{"7.5", "-", "0.01"}], ",", "0.01"}], "}"}]}], "]"}], 
+           ",", 
            RowBox[{
-            RowBox[{"10", "^", "i"}], ",", 
-            RowBox[{"{", 
-             RowBox[{"i", ",", "0", ",", 
-              RowBox[{"7.5", "-", "0.02"}], ",", "0.01"}], "}"}]}], "]"}], 
-          ",", 
-          RowBox[{"Differences", "[", 
-           RowBox[{"diffSol", "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "}"}], "]"}]}],
-       ";", "\[IndentingNewLine]", 
-      RowBox[{"FirstNegative", " ", "=", 
-       RowBox[{"Flatten", "[", 
-        RowBox[{
-         RowBox[{"Position", "[", 
-          RowBox[{
-           RowBox[{"diffSolMultDiff", "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
-           RowBox[{"_", "?", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"#", "<", "0"}], "&"}], ")"}]}]}], "]"}], ",", "1"}], 
-        "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-      RowBox[{"(*", 
-       RowBox[{
-        RowBox[{"intvecSol", " ", "=", " ", 
-         RowBox[{"Intersection", "[", 
-          RowBox[{
-           RowBox[{"Flatten", "[", 
-            RowBox[{
-             RowBox[{"Position", "[", 
+            RowBox[{"Differences", "[", 
+             RowBox[{"Table", "[", 
               RowBox[{
-               RowBox[{"diffSol", "[", 
-                RowBox[{"[", 
-                 RowBox[{"All", ",", "1"}], "]"}], "]"}], ",", 
-               RowBox[{"_", "?", 
-                RowBox[{"(", 
-                 RowBox[{
-                  RowBox[{"(", 
-                   RowBox[{"#", ">", "0"}], ")"}], "&"}], ")"}]}]}], "]"}], 
-             ",", "1"}], "]"}], ",", "\[IndentingNewLine]", 
-           RowBox[{"Flatten", "[", 
-            RowBox[{
-             RowBox[{"Position", "[", 
-              RowBox[{
-               RowBox[{"diffSol", "[", 
-                RowBox[{"[", 
-                 RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
-               RowBox[{"_", "?", 
-                RowBox[{"(", 
-                 RowBox[{
-                  RowBox[{"#", ">", "0"}], "&"}], ")"}]}]}], "]"}], ",", 
-             "1"}], "]"}]}], "]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
-      RowBox[{"(*", 
-       RowBox[{
-        RowBox[{"intvecSol", " ", "=", 
-         RowBox[{"Flatten", "[", 
-          RowBox[{
-           RowBox[{"Position", "[", 
-            RowBox[{
-             RowBox[{"diffSol", "[", 
-              RowBox[{"[", 
-               RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
-             RowBox[{"_", "?", 
-              RowBox[{"(", 
                RowBox[{
-                RowBox[{"#", ">", "0"}], "&"}], ")"}]}]}], "]"}], ",", "1"}], 
-          "]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
-      RowBox[{"(*", 
-       RowBox[{
-        RowBox[{"thresholdpositionC", " ", "=", " ", 
-         RowBox[{"If", "[", 
+                RowBox[{"Abs", "[", 
+                 RowBox[{
+                  RowBox[{"(", "Sol", ")"}], "/.", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"w", "->", "wvalue"}], ",", 
+                    RowBox[{"\[Phi]", "->", "phivalue"}]}], "}"}]}], "]"}], "/.", 
+                RowBox[{"Mass", "->", 
+                 RowBox[{"10", "^", "i"}]}]}], ",", 
+               RowBox[{"{", 
+                RowBox[{"i", ",", "0", ",", "7.5", ",", "0.01"}], "}"}]}], 
+              "]"}], "]"}], "*", 
+            RowBox[{"Table", "[", 
+             RowBox[{
+              RowBox[{"10", "^", "i"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"i", ",", "0", ",", 
+                RowBox[{"7.5", "-", "0.01"}], ",", "0.01"}], "}"}]}], 
+             "]"}]}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"diffSolMultDiff", " ", "=", " ", 
+        RowBox[{"Transpose", "[", 
+         RowBox[{"{", 
           RowBox[{
-           RowBox[{
-            RowBox[{"Length", "[", "intvecC", "]"}], "==", "0"}], ",", 
-           RowBox[{"Length", "[", "diffC", "]"}], ",", 
-           RowBox[{"intvecC", "[", 
-            RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";", 
-        "\[IndentingNewLine]", 
-        RowBox[{"thresholdsizeC", " ", "=", "  ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"10", "^", "i"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "0", ",", 
+               RowBox[{"7.5", "-", "0.02"}], ",", "0.01"}], "}"}]}], "]"}], 
+           ",", 
+           RowBox[{"Differences", "[", 
+            RowBox[{"diffSol", "[", 
+             RowBox[{"[", 
+              RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "}"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"FirstNegative", " ", "=", 
+        RowBox[{"Flatten", "[", 
          RowBox[{
-          RowBox[{"diffC", "[", 
-           RowBox[{"[", "thresholdpositionC", "]"}], "]"}], "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "*)"}], 
-      "\[IndentingNewLine]", "\[IndentingNewLine]", 
-      RowBox[{"(*", 
-       RowBox[{
-       "Test", " ", "to", " ", "see", " ", "if", " ", "there", " ", "is", " ",
-         "a", " ", "threshold", " ", "at", " ", "all"}], "*)"}], 
-      "\[IndentingNewLine]", 
-      RowBox[{"If", "[", 
-       RowBox[{
+          RowBox[{"Position", "[", 
+           RowBox[{
+            RowBox[{"diffSolMultDiff", "[", 
+             RowBox[{"[", 
+              RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+            RowBox[{"_", "?", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"#", "<", "0"}], "&"}], ")"}]}]}], "]"}], ",", "1"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
         RowBox[{
-         RowBox[{"Length", "[", "FirstNegative", "]"}], "==", "0"}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"Missing", "[", "]"}], ",", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"thresholdsizeSol", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"diffSol", "[", 
-            RowBox[{"[", 
-             RowBox[{"FirstNegative", "[", 
-              RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], "[", 
-           RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-         RowBox[{"DensityAtMass", " ", "=", " ", 
-          RowBox[{"(", 
-           RowBox[{"DensitySol", "/.", 
-            RowBox[{"{", 
+         RowBox[{"intvecSol", " ", "=", " ", 
+          RowBox[{"Intersection", "[", 
+           RowBox[{
+            RowBox[{"Flatten", "[", 
              RowBox[{
-              RowBox[{"w", "->", "wvalue"}], ",", 
-              RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
-              RowBox[{"Mass", "->", 
-               RowBox[{"thresholdsizeSol", "*", 
-                RowBox[{"(", 
-                 RowBox[{"1", "-", "0"}], ")"}]}]}]}], "}"}]}], ")"}]}], ";", 
+              RowBox[{"Position", "[", 
+               RowBox[{
+                RowBox[{"diffSol", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"All", ",", "1"}], "]"}], "]"}], ",", 
+                RowBox[{"_", "?", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"#", ">", "0"}], ")"}], "&"}], ")"}]}]}], "]"}], 
+              ",", "1"}], "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Flatten", "[", 
+             RowBox[{
+              RowBox[{"Position", "[", 
+               RowBox[{
+                RowBox[{"diffSol", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+                RowBox[{"_", "?", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"#", ">", "0"}], "&"}], ")"}]}]}], "]"}], ",", 
+              "1"}], "]"}]}], "]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"intvecSol", " ", "=", 
+          RowBox[{"Flatten", "[", 
+           RowBox[{
+            RowBox[{"Position", "[", 
+             RowBox[{
+              RowBox[{"diffSol", "[", 
+               RowBox[{"[", 
+                RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+              RowBox[{"_", "?", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"#", ">", "0"}], "&"}], ")"}]}]}], "]"}], ",", "1"}],
+            "]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"thresholdpositionC", " ", "=", " ", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Length", "[", "intvecC", "]"}], "==", "0"}], ",", 
+            RowBox[{"Length", "[", "diffC", "]"}], ",", 
+            RowBox[{"intvecC", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], ";", 
          "\[IndentingNewLine]", 
-         RowBox[{"DensityAtMassLow", " ", "=", " ", 
-          RowBox[{"(", 
-           RowBox[{"DensitySol", "/.", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"w", "->", "wvalue"}], ",", 
-              RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
-              RowBox[{"Mass", "->", 
-               RowBox[{"thresholdsizeSol", "*", 
-                RowBox[{"(", 
-                 RowBox[{"1", "-", "0.1"}], ")"}]}]}]}], "}"}]}], ")"}]}], 
-         ";", "\[IndentingNewLine]", 
-         RowBox[{"DensityAtMassHigh", " ", "=", " ", 
-          RowBox[{"(", 
-           RowBox[{"DensitySol", "/.", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"w", "->", "wvalue"}], ",", 
-              RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
-              RowBox[{"Mass", "->", 
-               RowBox[{"thresholdsizeSol", "*", 
-                RowBox[{"(", 
-                 RowBox[{"1", "+", "0.1"}], ")"}]}]}]}], "}"}]}], ")"}]}], 
-         ";", "\[IndentingNewLine]", 
-         RowBox[{"(*", 
+         RowBox[{"thresholdsizeC", " ", "=", "  ", 
           RowBox[{
+           RowBox[{"diffC", "[", 
+            RowBox[{"[", "thresholdpositionC", "]"}], "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "*)"}], 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        "Test", " ", "to", " ", "see", " ", "if", " ", "there", " ", "is", 
+         " ", "a", " ", "threshold", " ", "at", " ", "all"}], "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Length", "[", "FirstNegative", "]"}], "==", "0"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Missing", "[", "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"thresholdsizeSol", " ", "=", " ", 
            RowBox[{
-           "Test", " ", "to", " ", "make", " ", "sure", " ", "it", " ", "is", 
-            " ", "non"}], "-", 
-           RowBox[{"negative", " ", "and", " ", "non"}], "-", "imaginary"}], 
-          "*)"}], "\[IndentingNewLine]", 
-         RowBox[{"If", "[", 
-          RowBox[{
+            RowBox[{"diffSol", "[", 
+             RowBox[{"[", 
+              RowBox[{"FirstNegative", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"DensityAtMass", " ", "=", " ", 
+           RowBox[{"(", 
+            RowBox[{"DensitySol", "/.", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"w", "->", "wvalue"}], ",", 
+               RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
+               RowBox[{"Mass", "->", 
+                RowBox[{"thresholdsizeSol", "*", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", "0"}], ")"}]}]}]}], "}"}]}], ")"}]}], ";",
+           "\[IndentingNewLine]", 
+          RowBox[{"DensityAtMassLow", " ", "=", " ", 
+           RowBox[{"(", 
+            RowBox[{"DensitySol", "/.", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"w", "->", "wvalue"}], ",", 
+               RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
+               RowBox[{"Mass", "->", 
+                RowBox[{"thresholdsizeSol", "*", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "-", "0.1"}], ")"}]}]}]}], "}"}]}], ")"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"DensityAtMassHigh", " ", "=", " ", 
+           RowBox[{"(", 
+            RowBox[{"DensitySol", "/.", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"w", "->", "wvalue"}], ",", 
+               RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
+               RowBox[{"Mass", "->", 
+                RowBox[{"thresholdsizeSol", "*", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "0.1"}], ")"}]}]}]}], "}"}]}], ")"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"(*", 
            RowBox[{
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"Re", "[", "DensityAtMassLow", "]"}], ">", "0"}], " ", 
-              "&&", 
-              RowBox[{"RealQ", "[", "DensityAtMassLow", "]"}]}], ")"}], "||", 
-            
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"Re", "[", "DensityAtMassHigh", "]"}], " ", ">", " ", 
-               "0"}], "&&", 
-              RowBox[{"RealQ", "[", "DensityAtMassHigh", "]"}]}], ")"}]}], 
-           ",", "\[IndentingNewLine]", 
-           RowBox[{"(*", 
             RowBox[{
-             RowBox[{
-             "Test", " ", "to", " ", "make", " ", "sure", " ", "it", " ", 
-              "is", " ", "an", " ", "extinction", " ", "threshold"}], ",", 
-             " ", 
-             RowBox[{
-              RowBox[{"where", " ", "density"}], " ", "->", " ", "0"}]}], 
-            "*)"}], "\[IndentingNewLine]", 
-           RowBox[{"If", "[", 
+            "Test", " ", "to", " ", "make", " ", "sure", " ", "it", " ", "is",
+              " ", "non"}], "-", 
+            RowBox[{"negative", " ", "and", " ", "non"}], "-", "imaginary"}], 
+           "*)"}], "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
             RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Re", "[", "DensityAtMassLow", "]"}], ">", "0"}], " ",
+                "&&", 
+               RowBox[{"RealQ", "[", "DensityAtMassLow", "]"}]}], ")"}], "||", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Re", "[", "DensityAtMassHigh", "]"}], " ", ">", " ", 
+                "0"}], "&&", 
+               RowBox[{"RealQ", "[", "DensityAtMassHigh", "]"}]}], ")"}]}], 
+            ",", "\[IndentingNewLine]", 
+            RowBox[{"(*", 
              RowBox[{
               RowBox[{
-               RowBox[{"Re", "[", "DensityAtMass", "]"}], "<", 
-               RowBox[{"Re", "[", "DensityAtMassLow", "]"}]}], "||", 
+              "Test", " ", "to", " ", "make", " ", "sure", " ", "it", " ", 
+               "is", " ", "an", " ", "extinction", " ", "threshold"}], ",", 
+              " ", 
               RowBox[{
-               RowBox[{"Re", "[", "DensityAtMass", "]"}], "<", 
-               RowBox[{"Re", "[", "DensityAtMassHigh", "]"}]}]}], ",", 
-             "\[IndentingNewLine]", "thresholdsizeSol", ",", 
-             "\[IndentingNewLine]", 
-             RowBox[{"Missing", "[", "]"}]}], "\[IndentingNewLine]", "]"}], 
-           ",", "\[IndentingNewLine]", 
-           RowBox[{"Missing", "[", "]"}]}], "\[IndentingNewLine]", "]"}]}]}], 
-       "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
-    RowBox[{"(*", "thresholdsizeSol", "*)"}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}]], "Input",
+               RowBox[{"where", " ", "density"}], " ", "->", " ", "0"}]}], 
+             "*)"}], "\[IndentingNewLine]", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"Re", "[", "DensityAtMass", "]"}], "<", 
+                RowBox[{"Re", "[", "DensityAtMassLow", "]"}]}], "||", 
+               RowBox[{
+                RowBox[{"Re", "[", "DensityAtMass", "]"}], "<", 
+                RowBox[{"Re", "[", "DensityAtMassHigh", "]"}]}]}], ",", 
+              "\[IndentingNewLine]", "thresholdsizeSol", ",", 
+              "\[IndentingNewLine]", 
+              RowBox[{"Missing", "[", "]"}]}], "\[IndentingNewLine]", "]"}], 
+            ",", "\[IndentingNewLine]", 
+            RowBox[{"Missing", "[", "]"}]}], "\[IndentingNewLine]", "]"}]}]}],
+         "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+     RowBox[{"(*", "thresholdsizeSol", "*)"}], "\[IndentingNewLine]", "]"}]}],
+    ";"}], "*)"}]], "Input",
  CellChangeTimes->{{3.8925673510333643`*^9, 3.892567354460989*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"2566313e-ac86-4b91-be0a-8ba54b28bb59"],
+ CellLabel->"In[6]:=",ExpressionUUID->"60358c2d-9a3d-42cd-b274-b668506ba473"],
 
 Cell["This seems to work (5/16/2023)", "Text",
  CellChangeTimes->{{3.893263880912925*^9, 
@@ -573,14 +573,14 @@ Cell[BoxData[
                     RowBox[{"P", "/.", 
                     RowBox[{"LVSS", "[", 
                     RowBox[{"[", "i", "]"}], "]"}]}], ")"}]}], ",", 
-                  RowBox[{"C1", "->", 
+                  RowBox[{"H1", "->", 
                    RowBox[{"(", 
-                    RowBox[{"C1", "/.", 
+                    RowBox[{"H1", "/.", 
                     RowBox[{"LVSS", "[", 
                     RowBox[{"[", "i", "]"}], "]"}]}], ")"}]}], ",", 
-                  RowBox[{"C2", "->", 
+                  RowBox[{"H2", "->", 
                    RowBox[{"(", 
-                    RowBox[{"C2", "/.", 
+                    RowBox[{"H2", "/.", 
                     RowBox[{"LVSS", "[", 
                     RowBox[{"[", "i", "]"}], "]"}]}], ")"}]}], ",", 
                   RowBox[{"R", "->", 
@@ -631,7 +631,7 @@ Cell[BoxData[
             RowBox[{"1", "/", 
              RowBox[{"OptPreyMass", "[", "Mp", "]"}]}], ")"}], "*", 
            RowBox[{"(", 
-            RowBox[{"C1", "/.", 
+            RowBox[{"H1", "/.", 
              RowBox[{"LVSS", "[", 
               RowBox[{"[", "StablePos1", "]"}], "]"}]}], ")"}]}], ",", 
           "\[IndentingNewLine]", 
@@ -642,7 +642,7 @@ Cell[BoxData[
               RowBox[{"\[Phi]", "*", 
                RowBox[{"OptPreyMass", "[", "Mp", "]"}]}], ")"}]}], ")"}], "*", 
            RowBox[{"(", 
-            RowBox[{"C2", "/.", 
+            RowBox[{"H2", "/.", 
              RowBox[{"LVSS", "[", 
               RowBox[{"[", "StablePos1", "]"}], "]"}]}], ")"}]}], ",", 
           "\[IndentingNewLine]", 
@@ -692,7 +692,7 @@ Cell[BoxData[
                RowBox[{"1", "/", 
                 RowBox[{"OptPreyMass", "[", "Mp", "]"}]}], ")"}], "*", 
               RowBox[{"(", 
-               RowBox[{"C1", "/.", 
+               RowBox[{"H1", "/.", 
                 RowBox[{"LVSS", "[", 
                  RowBox[{"[", "StablePos2", "]"}], "]"}]}], ")"}]}], ",", 
              "\[IndentingNewLine]", 
@@ -704,7 +704,7 @@ Cell[BoxData[
                   RowBox[{"OptPreyMass", "[", "Mp", "]"}]}], ")"}]}], ")"}], 
               "*", 
               RowBox[{"(", 
-               RowBox[{"C2", "/.", 
+               RowBox[{"H2", "/.", 
                 RowBox[{"LVSS", "[", 
                  RowBox[{"[", "StablePos2", "]"}], "]"}]}], ")"}]}], ",", 
              "\[IndentingNewLine]", 
@@ -724,7 +724,7 @@ Cell[BoxData[
        "PredMass", ",", "wvalue", ",", "\[Phi]value", ",", "StableSol1", ",", 
         "StableSol2", ",", "StablePos"}], "}"}]}]}], "\[IndentingNewLine]", 
     "]"}]}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.893262302885695*^9, 3.8932624256973453`*^9}, {
+ CellChangeTimes->{{3.893262302885695*^9, 3.893262425697345*^9}, {
   3.8932625006551*^9, 3.893262582060747*^9}, {3.893262618150358*^9, 
   3.89326286577392*^9}, {3.893262897308951*^9, 3.89326292608446*^9}, {
   3.893263283947811*^9, 3.893263347003885*^9}, {3.8932635936716623`*^9, 
@@ -734,11 +734,13 @@ Cell[BoxData[
   3.893270419444242*^9, 3.8932704515861273`*^9}, {3.893270503540009*^9, 
   3.8932705350263643`*^9}, {3.8932709159983997`*^9, 3.893270936662631*^9}, {
   3.893320525569256*^9, 3.893320555899348*^9}, {3.893320586893057*^9, 
-  3.893320620574534*^9}, {3.894026269376206*^9, 3.8940262738240547`*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"97a8ee2f-82a2-4a85-8c36-1384c2df63c9"],
+  3.893320620574534*^9}, {3.894026269376206*^9, 3.8940262738240547`*^9}, {
+  3.933435948636817*^9, 
+  3.933435975441448*^9}},ExpressionUUID->"97a8ee2f-82a2-4a85-8c36-\
+1384c2df63c9"],
 
 Cell[BoxData[
- RowBox[{
+ RowBox[{"(*", 
   RowBox[{
    RowBox[{"HarvestAnalysis", "[", 
     RowBox[{
@@ -1053,8 +1055,8 @@ Cell[BoxData[
       "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{"PeakData", ",", "PrePeakData", ",", "PostPeakData"}], 
-       "}"}]}]}], "\[IndentingNewLine]", "]"}]}], 
-  "\[IndentingNewLine]"}]], "Input",
+       "}"}]}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+  "*)"}]], "Input",
  CellChangeTimes->{{3.895059416388897*^9, 3.895059624680506*^9}, {
    3.895059733179202*^9, 3.8950597532250767`*^9}, {3.895059886079329*^9, 
    3.895059941049264*^9}, {3.895060103887074*^9, 3.89506015511848*^9}, {
@@ -1069,123 +1071,123 @@ Cell[BoxData[
    3.89507340097506*^9}, {3.895073802805098*^9, 3.89507391952404*^9}, {
    3.895074023564546*^9, 3.895074073132417*^9}, {3.8950764386783543`*^9, 
    3.895076450123981*^9}, {3.895077025666244*^9, 3.895077051676149*^9}, {
-   3.895077091873629*^9, 3.8950770944143453`*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"56e3a78f-3e2a-4ca2-b843-8a37a34b662b"],
+   3.895077091873629*^9, 3.895077094414345*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"59d574c6-2a86-4714-8aab-c71b2fa3c91f"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"TransientAnalysis", "[", 
-   RowBox[{
-   "eqnP_", ",", "eqnC1_", ",", "eqnC2_", ",", "eqnR_", ",", "eqnH_", ",", 
-    "PredMass_", ",", "phivalue_", ",", "vvalue_"}], "]"}], ":=", 
-  "\[IndentingNewLine]", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-     "sol", ",", "SolList", ",", "PList", ",", "C1List", ",", "C2List", ",", 
-      "TimeList", ",", "DiffTimeList", ",", "TimeEventPos", ",", "C1peaks", 
-      ",", "C2peaks", ",", "C1maxpeakpos", ",", "C2maxpeakpos"}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"TransientAnalysis", "[", 
     RowBox[{
-     RowBox[{"ndeqns", "=", 
-      RowBox[{"PC1C2RHarvestSim", "[", 
-       RowBox[{
-       "eqnP", ",", "eqnC1", ",", "eqnC2", ",", "eqnR", ",", "eqnH", ",", 
-        "0"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"ndeqnswhenevent", " ", "=", " ", 
-      RowBox[{"Flatten", "[", 
-       RowBox[{
-        RowBox[{"Join", "[", 
-         RowBox[{"{", 
-          RowBox[{"ndeqns", 
-           RowBox[{"(*", 
-            RowBox[{",", 
-             RowBox[{"WhenEvent", "[", 
-              RowBox[{
-               RowBox[{"t", "==", 
-                RowBox[{"(", 
-                 RowBox[{"1", "*", 
-                  RowBox[{"10", "^", 
-                   RowBox[{"(", "11.5", ")"}]}]}], ")"}]}], ",", 
-               RowBox[{
-                RowBox[{"H", "[", "t", "]"}], "->", "hvalue"}]}], "]"}]}], 
-            "*)"}], ",", 
-           RowBox[{"WhenEvent", "[", 
-            RowBox[{
-             RowBox[{
-              RowBox[{"C1", "[", "t", "]"}], "<", 
-              RowBox[{"10", "^", 
-               RowBox[{"-", "10"}]}]}], ",", 
-             RowBox[{
-              RowBox[{"C1", "[", "t", "]"}], "->", "0"}]}], "]"}], ",", 
-           RowBox[{"WhenEvent", "[", 
-            RowBox[{
-             RowBox[{
-              RowBox[{"C2", "[", "t", "]"}], "<", 
-              RowBox[{"10", "^", 
-               RowBox[{"-", "10"}]}]}], ",", 
-             RowBox[{
-              RowBox[{"C2", "[", "t", "]"}], "->", "0"}]}], "]"}]}], "}"}], 
-         "]"}], ",", "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"tmax", " ", "=", " ", 
-      RowBox[{"10", "^", "14"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"(*", " ", 
+    "eqnP_", ",", "eqnC1_", ",", "eqnC2_", ",", "eqnR_", ",", "eqnH_", ",", 
+     "PredMass_", ",", "phivalue_", ",", "vvalue_"}], "]"}], ":=", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
       RowBox[{
+      "sol", ",", "SolList", ",", "PList", ",", "C1List", ",", "C2List", ",", 
+       "TimeList", ",", "DiffTimeList", ",", "TimeEventPos", ",", "C1peaks", 
+       ",", "C2peaks", ",", "C1maxpeakpos", ",", "C2maxpeakpos"}], "}"}], ",",
+      "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ndeqns", "=", 
+       RowBox[{"PC1C2RHarvestSim", "[", 
+        RowBox[{
+        "eqnP", ",", "eqnC1", ",", "eqnC2", ",", "eqnR", ",", "eqnH", ",", 
+         "0"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"ndeqnswhenevent", " ", "=", " ", 
+       RowBox[{"Flatten", "[", 
+        RowBox[{
+         RowBox[{"Join", "[", 
+          RowBox[{"{", 
+           RowBox[{"ndeqns", 
+            RowBox[{"(*", 
+             RowBox[{",", 
+              RowBox[{"WhenEvent", "[", 
+               RowBox[{
+                RowBox[{"t", "==", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "*", 
+                   RowBox[{"10", "^", 
+                    RowBox[{"(", "11.5", ")"}]}]}], ")"}]}], ",", 
+                RowBox[{
+                 RowBox[{"H", "[", "t", "]"}], "->", "hvalue"}]}], "]"}]}], 
+             "*)"}], ",", 
+            RowBox[{"WhenEvent", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"C1", "[", "t", "]"}], "<", 
+               RowBox[{"10", "^", 
+                RowBox[{"-", "10"}]}]}], ",", 
+              RowBox[{
+               RowBox[{"C1", "[", "t", "]"}], "->", "0"}]}], "]"}], ",", 
+            RowBox[{"WhenEvent", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"C2", "[", "t", "]"}], "<", 
+               RowBox[{"10", "^", 
+                RowBox[{"-", "10"}]}]}], ",", 
+              RowBox[{
+               RowBox[{"C2", "[", "t", "]"}], "->", "0"}]}], "]"}]}], "}"}], 
+          "]"}], ",", "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"tmax", " ", "=", " ", 
+       RowBox[{"10", "^", "14"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
        RowBox[{
-        RowBox[{"1", "*", 
-         RowBox[{"10", "^", 
-          RowBox[{"(", "9.5", ")"}]}], " ", "is", " ", "a", " ", "good", " ", 
-         "pick", " ", "from", " ", "observation", " ", "across", " ", "pred", 
-         " ", "mass", " ", "for", " ", "nu"}], " ", "=", " ", "1"}], ",", 
-       "10"}], "*)"}], "\[IndentingNewLine]", 
-     RowBox[{"EarlyOscillationTime", " ", "=", " ", 
-      RowBox[{"1", "*", 
-       RowBox[{"10", "^", 
-        RowBox[{"(", "9.5", ")"}]}]}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"sol", " ", "=", " ", 
-      RowBox[{"NDSolve", "[", 
-       RowBox[{
-        RowBox[{"ndeqnswhenevent", "/.", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"Mp", "->", "PredMass"}], ",", 
-           RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
-           RowBox[{"v", "->", "vvalue"}]}], "}"}]}], ",", 
-        "\[IndentingNewLine]", 
-        RowBox[{"{", 
-         RowBox[{"P", ",", "C1", ",", "C2", ",", "R", ",", "H"}], "}"}], ",", 
-        
-        RowBox[{"{", 
-         RowBox[{"t", ",", "1", ",", "tmax"}], "}"}], ",", 
-        RowBox[{"Method", "->", "Automatic"}]}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"SolList", "=", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"Flatten", "[", 
-         RowBox[{
+        RowBox[{
+         RowBox[{"1", "*", 
+          RowBox[{"10", "^", 
+           RowBox[{"(", "9.5", ")"}]}], " ", "is", " ", "a", " ", "good", " ",
+           "pick", " ", "from", " ", "observation", " ", "across", " ", 
+          "pred", " ", "mass", " ", "for", " ", "nu"}], " ", "=", " ", "1"}], 
+        ",", "10"}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"EarlyOscillationTime", " ", "=", " ", 
+       RowBox[{"1", "*", 
+        RowBox[{"10", "^", 
+         RowBox[{"(", "9.5", ")"}]}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"sol", " ", "=", " ", 
+       RowBox[{"NDSolve", "[", 
+        RowBox[{
+         RowBox[{"ndeqnswhenevent", "/.", 
           RowBox[{"{", 
            RowBox[{
-            RowBox[{"10", "^", "timeexp"}], ",", 
-            RowBox[{"Flatten", "[", 
-             RowBox[{
+            RowBox[{"Mp", "->", "PredMass"}], ",", 
+            RowBox[{"\[Phi]", "->", "phivalue"}], ",", 
+            RowBox[{"v", "->", "vvalue"}]}], "}"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"P", ",", "C1", ",", "C2", ",", "R", ",", "H"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "1", ",", "tmax"}], "}"}], ",", 
+         RowBox[{"Method", "->", "Automatic"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"SolList", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"Flatten", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"10", "^", "timeexp"}], ",", 
+             RowBox[{"Flatten", "[", 
               RowBox[{
-               RowBox[{"Evaluate", "[", 
-                RowBox[{
-                 RowBox[{"{", 
-                  RowBox[{
+               RowBox[{
+                RowBox[{"Evaluate", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
                    RowBox[{
+                    RowBox[{
                     RowBox[{"(", 
                     RowBox[{"1", "/", "PredMass"}], ")"}], "*", 
                     RowBox[{"P", "[", "t", "]"}]}], ",", 
-                   RowBox[{
+                    RowBox[{
                     RowBox[{"(", 
                     RowBox[{"1", "/", 
                     RowBox[{"OptPreyMass", "[", "PredMass", "]"}]}], ")"}], 
                     "*", 
                     RowBox[{"C1", "[", "t", "]"}]}], ",", 
-                   RowBox[{
+                    RowBox[{
                     RowBox[{"(", 
                     RowBox[{"1", "/", 
                     RowBox[{"(", 
@@ -1193,219 +1195,222 @@ Cell[BoxData[
                     RowBox[{"OptPreyMass", "[", "PredMass", "]"}]}], ")"}]}], 
                     ")"}], "*", 
                     RowBox[{"C2", "[", "t", "]"}]}]}], "}"}], "/.", "sol"}], 
-                "]"}], "/.", 
-               RowBox[{"t", "->", 
-                RowBox[{"10", "^", "timeexp"}]}]}], ",", "1"}], "]"}]}], 
-           "}"}], ",", "1"}], "]"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"timeexp", ",", 
-          RowBox[{"Log10", "[", "EarlyOscillationTime", "]"}], ",", "12", ",",
-           "0.001"}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"TimeList", " ", "=", " ", 
-      RowBox[{"SolList", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"PList", " ", "=", " ", 
-      RowBox[{"SolList", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C1List", " ", "=", " ", 
-      RowBox[{"SolList", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C2List", "=", 
-      RowBox[{"SolList", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", "4"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]",
+                 "]"}], "/.", 
+                RowBox[{"t", "->", 
+                 RowBox[{"10", "^", "timeexp"}]}]}], ",", "1"}], "]"}]}], 
+            "}"}], ",", "1"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"timeexp", ",", 
+           RowBox[{"Log10", "[", "EarlyOscillationTime", "]"}], ",", "12", 
+           ",", "0.001"}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"TimeList", " ", "=", " ", 
+       RowBox[{"SolList", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", 
       "\[IndentingNewLine]", 
-     RowBox[{"DiffTimeList", " ", "=", " ", 
-      RowBox[{"Abs", "[", 
-       RowBox[{"TimeList", "-", 
-        RowBox[{"(", "EarlyOscillationTime", ")"}]}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"TimeEventPos", " ", "=", " ", 
-      RowBox[{
+      RowBox[{"PList", " ", "=", " ", 
+       RowBox[{"SolList", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "2"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C1List", " ", "=", " ", 
+       RowBox[{"SolList", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "3"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C2List", "=", 
+       RowBox[{"SolList", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "4"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"DiffTimeList", " ", "=", " ", 
+       RowBox[{"Abs", "[", 
+        RowBox[{"TimeList", "-", 
+         RowBox[{"(", "EarlyOscillationTime", ")"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"TimeEventPos", " ", "=", " ", 
+       RowBox[{
+        RowBox[{"Flatten", "[", 
+         RowBox[{
+          RowBox[{"Position", "[", 
+           RowBox[{"DiffTimeList", ",", 
+            RowBox[{"Min", "[", "DiffTimeList", "]"}]}], "]"}], ",", "1"}], 
+         "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Find", " ", "the", " ", "lowest", " ", "trough", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "or", " ", "the", " ", "maximum", " ", "negative", " ", "peak"}], 
+         ")"}]}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"C1peaks", " ", "=", 
+       RowBox[{"FindPeaks", "[", 
+        RowBox[{"-", "C1List"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"C2peaks", " ", "=", " ", 
+       RowBox[{"FindPeaks", "[", 
+        RowBox[{"-", "C2List"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"C1maxpeakpos", " ", "=", " ", 
        RowBox[{"Flatten", "[", 
         RowBox[{
          RowBox[{"Position", "[", 
-          RowBox[{"DiffTimeList", ",", 
-           RowBox[{"Min", "[", "DiffTimeList", "]"}]}], "]"}], ",", "1"}], 
-        "]"}], "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"(*", 
-      RowBox[{"Find", " ", "the", " ", "lowest", " ", "trough", " ", 
-       RowBox[{"(", 
-        RowBox[{
-        "or", " ", "the", " ", "maximum", " ", "negative", " ", "peak"}], 
-        ")"}]}], "*)"}], "\[IndentingNewLine]", 
-     RowBox[{"C1peaks", " ", "=", 
-      RowBox[{"FindPeaks", "[", 
-       RowBox[{"-", "C1List"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C2peaks", " ", "=", " ", 
-      RowBox[{"FindPeaks", "[", 
-       RowBox[{"-", "C2List"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C1maxpeakpos", " ", "=", " ", 
-      RowBox[{"Flatten", "[", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{
-          RowBox[{"C1peaks", "[", 
-           RowBox[{"[", 
-            RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
-          RowBox[{"Max", "[", 
+          RowBox[{
            RowBox[{"C1peaks", "[", 
             RowBox[{"[", 
-             RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "]"}], ",", 
-        "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C2maxpeakpos", " ", "=", " ", 
-      RowBox[{"Flatten", "[", 
-       RowBox[{
-        RowBox[{"Position", "[", 
-         RowBox[{
-          RowBox[{"C2peaks", "[", 
-           RowBox[{"[", 
-            RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
-          RowBox[{"Max", "[", 
-           RowBox[{"C2peaks", "[", 
-            RowBox[{"[", 
-             RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "]"}], ",", 
-        "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"If", "[", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"Length", "[", "C1maxpeakpos", "]"}], ">", "0"}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"C1maxpeakvalue", "=", " ", 
-         RowBox[{"Max", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"C1List", "[", 
-              RowBox[{"[", 
-               RowBox[{"C1peaks", "[", 
-                RowBox[{"[", 
-                 RowBox[{"C1maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], 
-              "]"}], "[", 
-             RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}], "]"}]}], ";", 
-        "\[IndentingNewLine]", 
-        RowBox[{"C1maxpeaktime", " ", "=", " ", 
-         RowBox[{
-          RowBox[{"TimeList", "[", 
-           RowBox[{"[", 
+             RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+           RowBox[{"Max", "[", 
             RowBox[{"C1peaks", "[", 
              RowBox[{"[", 
-              RowBox[{"C1maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], "]"}], 
-          "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", ",",
-        "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"C1maxpeakvalue", "=", 
-         RowBox[{"Missing", "[", "]"}]}], ";", "\[IndentingNewLine]", 
-        RowBox[{"C1maxpeaktime", " ", "=", " ", 
-         RowBox[{"Missing", "[", "]"}]}]}]}], "\[IndentingNewLine]", "]"}], 
-     ";", "\[IndentingNewLine]", 
-     RowBox[{"If", "[", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"Length", "[", "C2maxpeakpos", "]"}], ">", "0"}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{"C2maxpeakvalue", "=", " ", 
-         RowBox[{"Max", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"C2List", "[", 
-              RowBox[{"[", 
-               RowBox[{"C2peaks", "[", 
-                RowBox[{"[", 
-                 RowBox[{"C2maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], 
-              "]"}], "[", 
-             RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}], "]"}]}], ";", 
-        "\[IndentingNewLine]", 
-        RowBox[{"C2maxpeaktime", " ", "=", " ", 
-         RowBox[{
-          RowBox[{"TimeList", "[", 
-           RowBox[{"[", 
+              RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "]"}], ",", 
+         "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"C2maxpeakpos", " ", "=", " ", 
+       RowBox[{"Flatten", "[", 
+        RowBox[{
+         RowBox[{"Position", "[", 
+          RowBox[{
+           RowBox[{"C2peaks", "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", 
+           RowBox[{"Max", "[", 
             RowBox[{"C2peaks", "[", 
              RowBox[{"[", 
-              RowBox[{"C2maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], "]"}], 
-          "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", ",",
+              RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}], "]"}], ",", 
+         "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "C1maxpeakpos", "]"}], ">", "0"}], ",", 
         "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"C1maxpeakvalue", "=", " ", 
+          RowBox[{"Max", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"C1List", "[", 
+               RowBox[{"[", 
+                RowBox[{"C1peaks", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"C1maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], 
+               "]"}], "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}], "]"}]}], ";",
+          "\[IndentingNewLine]", 
+         RowBox[{"C1maxpeaktime", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"TimeList", "[", 
+            RowBox[{"[", 
+             RowBox[{"C1peaks", "[", 
+              RowBox[{"[", 
+               RowBox[{"C1maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], "]"}],
+            "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"C1maxpeakvalue", "=", 
+          RowBox[{"Missing", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"C1maxpeaktime", " ", "=", " ", 
+          RowBox[{"Missing", "[", "]"}]}]}]}], "\[IndentingNewLine]", "]"}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
        RowBox[{
-        RowBox[{"C2maxpeakvalue", "=", 
-         RowBox[{"Missing", "[", "]"}]}], ";", "\[IndentingNewLine]", 
-        RowBox[{"C2maxpeaktime", " ", "=", " ", 
-         RowBox[{"Missing", "[", "]"}]}], ";"}]}], "\[IndentingNewLine]", 
-      "]"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"(*", 
-      RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "C2maxpeakpos", "]"}], ">", "0"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"C2maxpeakvalue", "=", " ", 
+          RowBox[{"Max", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"C2List", "[", 
+               RowBox[{"[", 
+                RowBox[{"C2peaks", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"C2maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], 
+               "]"}], "[", 
+              RowBox[{"[", "1", "]"}], "]"}], ",", "0"}], "}"}], "]"}]}], ";",
+          "\[IndentingNewLine]", 
+         RowBox[{"C2maxpeaktime", " ", "=", " ", 
+          RowBox[{
+           RowBox[{"TimeList", "[", 
+            RowBox[{"[", 
+             RowBox[{"C2peaks", "[", 
+              RowBox[{"[", 
+               RowBox[{"C2maxpeakpos", ",", "1"}], "]"}], "]"}], "]"}], "]"}],
+            "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"C2maxpeakvalue", "=", 
+          RowBox[{"Missing", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"C2maxpeaktime", " ", "=", " ", 
+          RowBox[{"Missing", "[", "]"}]}], ";"}]}], "\[IndentingNewLine]", 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
        RowBox[{
-        RowBox[{"Reminder", " ", "-", " ", 
-         RowBox[{
-         "this", " ", "is", " ", "the", " ", "peak", " ", "of", " ", "the", 
-          " ", "negative", " ", "density"}]}], "..."}], " ", "which", " ", 
-       "is", " ", "the", " ", "trough", " ", "of", " ", "the", " ", 
-       "positive", " ", 
-       RowBox[{"density", "!"}]}], "*)"}], "\[IndentingNewLine]", 
-     RowBox[{"PeakData", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"Reminder", " ", "-", " ", 
+          RowBox[{
+          "this", " ", "is", " ", "the", " ", "peak", " ", "of", " ", "the", 
+           " ", "negative", " ", "density"}]}], "..."}], " ", "which", " ", 
+        "is", " ", "the", " ", "trough", " ", "of", " ", "the", " ", 
+        "positive", " ", 
+        RowBox[{"density", "!"}]}], "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"PeakData", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+        "C1maxpeaktime", ",", "C1maxpeakvalue", ",", "C2maxpeaktime", ",", 
+         "C2maxpeakvalue"}], "}"}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C1prepeakvalue", " ", "=", " ", 
+       RowBox[{"C1List", "[", 
+        RowBox[{"[", 
+         RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C1prepeaktime", " ", "=", "  ", 
+       RowBox[{"TimeList", "[", 
+        RowBox[{"[", 
+         RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C2prepeakvalue", " ", "=", " ", 
+       RowBox[{"C2List", "[", 
+        RowBox[{"[", 
+         RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C2prepeaktime", " ", "=", " ", 
+       RowBox[{"TimeList", "[", 
+        RowBox[{"[", 
+         RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"PrePeakData", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+        "C1prepeaktime", ",", "C1prepeakvalue", ",", "C2prepeaktime", ",", 
+         "C2prepeakvalue"}], "}"}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"C1postpeakvalue", " ", "=", " ", 
+       RowBox[{"Last", "[", "C1List", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"C1postpeaktime", " ", "=", "  ", 
+       RowBox[{"Last", "[", "TimeList", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"C2postpeakvalue", " ", "=", " ", 
+       RowBox[{"Last", "[", "C2List", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"C2postpeaktime", " ", "=", " ", 
+       RowBox[{"Last", "[", "TimeList", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"PostPeakData", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+        "C1postpeaktime", ",", "C1postpeakvalue", ",", "C2postpeaktime", ",", 
+         "C2postpeakvalue"}], "}"}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
       RowBox[{"{", 
-       RowBox[{
-       "C1maxpeaktime", ",", "C1maxpeakvalue", ",", "C2maxpeaktime", ",", 
-        "C2maxpeakvalue"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
-     RowBox[{"C1prepeakvalue", " ", "=", " ", 
-      RowBox[{"C1List", "[", 
-       RowBox[{"[", 
-        RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"C1prepeaktime", " ", "=", "  ", 
-      RowBox[{"TimeList", "[", 
-       RowBox[{"[", 
-        RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"C2prepeakvalue", " ", "=", " ", 
-      RowBox[{"C2List", "[", 
-       RowBox[{"[", 
-        RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"C2prepeaktime", " ", "=", " ", 
-      RowBox[{"TimeList", "[", 
-       RowBox[{"[", 
-        RowBox[{"TimeEventPos", "-", "1"}], "]"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"PrePeakData", " ", "=", " ", 
-      RowBox[{"{", 
-       RowBox[{
-       "C1prepeaktime", ",", "C1prepeakvalue", ",", "C2prepeaktime", ",", 
-        "C2prepeakvalue"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
-     RowBox[{"C1postpeakvalue", " ", "=", " ", 
-      RowBox[{"Last", "[", "C1List", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C1postpeaktime", " ", "=", "  ", 
-      RowBox[{"Last", "[", "TimeList", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C2postpeakvalue", " ", "=", " ", 
-      RowBox[{"Last", "[", "C2List", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"C2postpeaktime", " ", "=", " ", 
-      RowBox[{"Last", "[", "TimeList", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"PostPeakData", " ", "=", " ", 
-      RowBox[{"{", 
-       RowBox[{
-       "C1postpeaktime", ",", "C1postpeakvalue", ",", "C2postpeaktime", ",", 
-        "C2postpeakvalue"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
-     RowBox[{"{", 
-      RowBox[{"PeakData", ",", "PrePeakData", ",", "PostPeakData"}], 
-      "}"}]}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+       RowBox[{"PeakData", ",", "PrePeakData", ",", "PostPeakData"}], 
+       "}"}]}]}], "\[IndentingNewLine]", "]"}]}], "*)"}]], "Input",
  CellChangeTimes->{{3.920118354900167*^9, 3.920118384801385*^9}, {
    3.920118421435515*^9, 3.920118536589569*^9}, 3.920118606138913*^9, 
-   3.92012112991486*^9, {3.920121191575975*^9, 3.9201211917523212`*^9}, {
+   3.92012112991486*^9, {3.920121191575975*^9, 3.9201211917523217`*^9}, {
    3.920121353228449*^9, 
-   3.920121384741129*^9}},ExpressionUUID->"92eb6acc-8a30-4ac7-a56f-\
-251902988bec"]
+   3.920121384741129*^9}},ExpressionUUID->"4143009a-02c4-4824-a176-\
+4a11ab6cc7d7"]
 },
 WindowSize->{803, 1263},
 WindowMargins->{{257, Automatic}, {Automatic, 61}},
@@ -1432,11 +1437,11 @@ Cell[1893, 65, 4257, 107, 493, "Input",ExpressionUUID->"50180621-0f47-484a-abdb-
 Cell[6153, 174, 211, 5, 35, "Text",ExpressionUUID->"d49ff366-85f5-4417-a451-dc344a2c6d8b"],
 Cell[6367, 181, 4067, 105, 388, "Input",ExpressionUUID->"bb68c3aa-4f7f-4171-95b9-9f731e338c3e"],
 Cell[10437, 288, 250, 6, 35, "Text",ExpressionUUID->"bc92bcd0-61d8-4f54-a4c0-45c60704e0cd"],
-Cell[10690, 296, 9753, 244, 829, "Input",ExpressionUUID->"2566313e-ac86-4b91-be0a-8ba54b28bb59"],
-Cell[20446, 542, 172, 3, 35, "Text",ExpressionUUID->"9f5afdce-6cc6-46b0-bf44-2f65fac94599"],
-Cell[20621, 547, 7964, 190, 703, "Input",ExpressionUUID->"97a8ee2f-82a2-4a85-8c36-1384c2df63c9"],
-Cell[28588, 739, 14024, 333, 1375, "Input",ExpressionUUID->"56e3a78f-3e2a-4ca2-b843-8a37a34b662b"],
-Cell[42615, 1074, 13499, 333, 1396, "Input",ExpressionUUID->"92eb6acc-8a30-4ac7-a56f-251902988bec"]
+Cell[10690, 296, 10007, 244, 808, "Input",ExpressionUUID->"60358c2d-9a3d-42cd-b274-b668506ba473"],
+Cell[20700, 542, 172, 3, 35, "Text",ExpressionUUID->"9f5afdce-6cc6-46b0-bf44-2f65fac94599"],
+Cell[20875, 547, 7993, 192, 703, "Input",ExpressionUUID->"97a8ee2f-82a2-4a85-8c36-1384c2df63c9"],
+Cell[28871, 741, 14034, 333, 1354, "Input",ExpressionUUID->"59d574c6-2a86-4714-8aab-c71b2fa3c91f"],
+Cell[42908, 1076, 13846, 336, 1396, "Input",ExpressionUUID->"4143009a-02c4-4824-a176-4a11ab6cc7d7"]
 }
 ]
 *)

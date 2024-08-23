@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3905,        119]
-NotebookOptionsPosition[      3280,        102]
-NotebookOutlinePosition[      3678,        118]
-CellTagsIndexPosition[      3635,        115]
+NotebookDataLength[      3965,        120]
+NotebookOptionsPosition[      3340,        103]
+NotebookOutlinePosition[      3738,        119]
+CellTagsIndexPosition[      3695,        116]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,8 +32,8 @@ Cell[BoxData[{
       RowBox[{"{", 
        RowBox[{
        "$HomeDirectory", ",", 
-        "\"\</Dropbox/PostDoc/2024_PCR/data/mammalian_fit_table.csv\>\""}], 
-       "}"}], "]"}], ",", "\"\<csv\>\""}], "]"}]}], 
+        "\"\</Dropbox/PostDoc/2024_PredSizeDiet/data/mammalian_fit_table.csv\>\
+\""}], "}"}], "]"}], ",", "\"\<csv\>\""}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ExpPreymassdata", " ", "=", "  ", 
@@ -43,11 +43,12 @@ Cell[BoxData[{
       RowBox[{"{", 
        RowBox[{
        "$HomeDirectory", ",", 
-        "\"\</Dropbox/PostDoc/2024_PCR/data/mammalian_mass.csv\>\""}], "}"}], 
-      "]"}], ",", "\"\<csv\>\""}], "]"}]}], 
+        "\"\</Dropbox/PostDoc/2024_PredSizeDiet/data/mammalian_mass.csv\>\""}]\
+, "}"}], "]"}], ",", "\"\<csv\>\""}], "]"}]}], 
   ";"}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.926106808397408*^9, 
-  3.926106818086174*^9}},ExpressionUUID->"8d582e9c-9c58-49a7-ad77-\
+ CellChangeTimes->{{3.926106808397408*^9, 3.926106818086174*^9}, {
+  3.9334358874803123`*^9, 
+  3.9334358885736313`*^9}},ExpressionUUID->"8d582e9c-9c58-49a7-ad77-\
 21a9401e343e"],
 
 Cell["\<\
@@ -101,8 +102,8 @@ Cell[BoxData[
  CellLabel->"In[3]:=",ExpressionUUID->"9bd77ec8-9a67-45e4-a1e6-76253caf218a"]
 },
 WindowSize->{1121, 876},
-WindowMargins->{{233, Automatic}, {Automatic, 0}},
-FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+WindowMargins->{{54, Automatic}, {62, Automatic}},
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"fd231f32-960d-405f-a11e-40c029dce1a7"
 ]
@@ -118,9 +119,9 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 157, 3, 35, "Text",ExpressionUUID->"7071f0a1-b4db-4e24-aa2d-84dc2a80570b"],
-Cell[718, 25, 861, 25, 73, "Input",ExpressionUUID->"8d582e9c-9c58-49a7-ad77-21a9401e343e"],
-Cell[1582, 52, 266, 6, 35, "Text",ExpressionUUID->"df31d167-db0d-40fd-8222-5754bc16f370"],
-Cell[1851, 60, 1425, 40, 115, "Input",ExpressionUUID->"9bd77ec8-9a67-45e4-a1e6-76253caf218a"]
+Cell[718, 25, 921, 26, 73, "Input",ExpressionUUID->"8d582e9c-9c58-49a7-ad77-21a9401e343e"],
+Cell[1642, 53, 266, 6, 35, "Text",ExpressionUUID->"df31d167-db0d-40fd-8222-5754bc16f370"],
+Cell[1911, 61, 1425, 40, 115, "Input",ExpressionUUID->"9bd77ec8-9a67-45e4-a1e6-76253caf218a"]
 }
 ]
 *)
