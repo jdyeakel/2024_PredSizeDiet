@@ -83,7 +83,7 @@ This repository contains the code required to reproduce the analyses used in the
 
 ### References
 
-*   Anyonge, W. & Roman, C. (2006). New body mass estimates for Canis dirus, the extinct Pleistocene dire wolf. Journal of Vertebrate Paleontology, 26(1), 209-212.
+*   Anyonge, W. & Roman, C. (2006). New body mass estimates for *Canis dirus*, the extinct Pleistocene dire wolf. Journal of Vertebrate Paleontology, 26(1), 209-212.
 
 *   Carbone, C., and J. L. Gittleman. (2002). A common rule for the scaling of carnivore density. Science, 295, 2273-2276.
 
@@ -95,7 +95,7 @@ This repository contains the code required to reproduce the analyses used in the
 
 *   Dantas, M. A. T. (2022). Estimating the body mass of the late Pleistocene megafauna from the South America Intertropical Region and a new regression to estimate the body mass of extinct xenarthrans. Journal of South American Earth Sciences, 119, 103900.
 
-*   DeSantis, L. R. G., Feranec, R. S., Antón, M. & Lundelius, E. L. (2021). Dietary ecology of the scimitar-toothed cat Homotherium serum. Current Biology, 31(12), 2674-2681.
+*   DeSantis, L. R. G., Feranec, R. S., Antón, M. & Lundelius, E. L. (2021). Dietary ecology of the scimitar-toothed cat *Homotherium serum*. Current Biology, 31(12), 2674-2681.
 
 *   Feranec, R. S. & DeSantis, L. R. G. (2014). Understanding specifics in generalist diets of carnivorans by analyzing stable carbon isotope values in Pleistocene mammals of Florida. Paleobiology, 40(3), 477-493.
 
@@ -129,7 +129,7 @@ This repository contains the code required to reproduce the analyses used in the
 
 *   Koufos, G. D., Konidaris, G. E. & Harvati, K. (2018). Revisiting Ursus etruscus (Carnivora, Mammalia) from the Early Pleistocene of Greece with description of new material. Quaternary International, 497, 222-239.
 
-*   Marciszak, A. & Lipecki, G. (2022). Panthera gombaszoegensis (Kretzoi, 1938) from Poland in the scope of the species evolution. Quaternary International, 633, 36-51.
+*   Marciszak, A. & Lipecki, G. (2022). *Panthera gombaszoegensis* (Kretzoi, 1938) from Poland in the scope of the species evolution. Quaternary International, 633, 36-51.
 
 *   Palmqvist, P., Martínez-Navarro, B. & Arribas, A. (1996). Prey selection by terrestrial carnivores in a lower Pleistocene paleocommunity. Paleobiology, 22(4), 514-534.
 
@@ -147,7 +147,7 @@ This repository contains the code required to reproduce the analyses used in the
 
 *   Smith, F. A., Lyons, S. K., Ernest, S. M., Jones, K. E., Kaufman, D. M., Dayan, T., Marquet, P. A., Brown, J. H. & Haskell, J. P. (2003). Body mass of late Quaternary mammals: ecological archives e084-094. Ecology, 84, 3403-3403.
 
-*   Sorkin, B. (2006). Ecomorphology of the giant short-faced bears Agriotherium and Arctodus. Historical Biology, 18(1), 1-20.
+*   Sorkin, B. (2006). Ecomorphology of the giant short-faced bears *Agriotherium* and *Arctodus*. Historical Biology, 18(1), 1-20.
 
 *   Trayler, R. B., Dundas, R. G., Fox-Dobbs, K. & Van De Water, P. K. (2015). Inland California during the Pleistocene—Megafaunal stable isotope records reveal new paleoecological and paleoenvironmental insights. Palaeogeography, Palaeoclimatology, Palaeoecology, 437, 132-140.
 
