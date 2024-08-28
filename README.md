@@ -9,11 +9,11 @@ M.M. Pires
 
 
 ## Abstract
-Body size drives the energetic demands of organisms, and largely governs trophic interactions between species. On macroevolutionary timescales, these demands feed back to shape the selective landscape driving the evolution of size and diet. We develop a theoretical framework based on tri-trophic interaction motifs to explore mammalian population dynamics premised on bioenergetic tradeoffs. Our results show how interactions between predators, prey, and external subsidies generate instabilities linked to body size extrema, corresponding to observed limits of predator size and diet. These instabilities generate size-dependent constraints on coexistence and highlight a stabilizing carnivore size of 63 Kg. Finally, we show that increases in predator size confers selective advantage to dietary generalization, aligning with observations of predator diets among contemporary and Pleistocene species. Our framework underscores the importance of understanding macroevolutionary pressures through the lens of ecological interactions, where the selective forces shaping and reshaping the dynamics of communities can be explored.
+Body size drives the energetic demands of organisms, largely constraining trophic interactions between species, and can play a significant role in shaping the feasibility of species' populations in a community. On macroevolutionary timescales, these demands feed back to shape the selective landscape driving the evolution of size and diet. We develop a theoretical framework based on three-level trophic food chain to explore mammalian population dynamics premised on bioenergetic trade-offs.  Our results show that interactions between predators, prey, and external subsidies generate instabilities linked to body size extrema, corresponding to observed limits of predator size and diet. These instabilities generate size-dependent constraints on coexistence and highlight a stabilizing carnivore size range between 40 to 110 Kg, encompassing the mean body size of terrestrial Cenozoic hypercarnivores. Finally, we show that predator dietary generalization confers a selective advantage with larger body size, up to a point where those advantages then decline at very large size classes, aligning with observations of contemporary and Pleistocene species. Our framework underscores the importance of understanding macroevolutionary pressures through the lens of ecological interactions, where the selective forces shaping and reshaping the dynamics of communities can be explored.
 
 ## File Tree
 |── 1_subsidy.nb  
-|── 2024_PCR.code-workspace  
+|── 2024_PredSizeDiet.code-workspace  
 |── 2_competition.nb  
 |── README.md  
 |── contemp_mammal_analysis.R  
@@ -65,7 +65,7 @@ This repository contains the code required to reproduce the analyses used in the
     *   `/data/contemp_mammal_mass_smith_2004.csv`: Contemporary mammal body size and locality information (Smith et al. 2004). Columns - C1: continent; C2: order; C3: family; genus; C4: genus_age; C5: richness; C6: mass_mean_log10; C7: mass_mean_grams  
     *   `/data/carnivore_mass_MoM.csv`: Cenozoic carnivoran body size information extract from the Mass of Mammals Database (MoM v.4.1) (Smith et al. 2003): Columns - C1: Order; C2: Family; C3: Genus; C4: Species; C5: Mass_g  
 
->   Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPC1C2overWPhi.m` and `fixedpointwsPC1C2Ratio.m`.
+>   Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPH1H2overWPhi.m` and `fixedpointwsPH1H2Ratio.m`.
 <!-- 
 ## References
 *   Damuth, J. 1981. Population density and body size in mammals. Nature 290:699–700.  
