@@ -43,13 +43,13 @@ Body size drives the energetic demands of organisms, largely constraining trophi
 
 ## Description
 This repository contains the code required to reproduce the analyses used in the manuscript *Exploring ecological drivers of mammalian predator size and diet across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition_gen.nb`.  
-*   `/1_subsidy.nb`: This notebook reproduces the analyses for the tri-trophic motif where the predator derives its energy from both an herbivore prey and an external subsidy.  
-*   `/2_competition_gen.nb`: This notebook reproduces the analyses for the tri-trophic motif where the predator derives its energy from two herbivore consumer, which both compete for plant resource.  
+*   `/1_subsidy.nb`: This notebook reproduces the analyses for the subsidy model where the predator derives its energy from both an herbivore prey and an external subsidy.  
+*   `/2_competition_gen.nb`: This notebook reproduces the analyses for the competition model where the predator derives its energy from two herbivore prey, which both compete for a plant resource.  
 *   Both notebooks require: `src/allometric_functions_predpersp.nb`, `src/analysis_functions.nb`, `src/metabolic_constants.nb`, and `ppmr_primary.nb`, which are described below.  
     *   `/src/metabolic_constants.nb`: Metabolic constants used to parameterize the timescales associated with growth, reproduction, and mortality of the plant resource, both mammalian herbivore species, and the mammalian predator species.  
     *   `/src/allometric_functions_predpersp.nb`: Defines functions related to growth, reproduction, and mortality of all species in the motif, integrating the metabolic constants.  
-    *   `/src/analysis_functions.nb`: Defines numerous functions relating to the analysis of tri-trophic subsidy and competition systems.  
-    *   `/src/ppmr_primary.nb`: A minimal notebook that integrates the measured *Predator Prey Mass Relationship* that is evaluated in `/ppmr_fit.jl`, and defines the expected prey mass given a predator mass $E(M_C|M_P)$. This incorporates the output of the `/ppmr_fit.jl` code:  
+    *   `/src/analysis_functions.nb`: Defines numerous functions relating to the analysis of subsidy and competition models.  
+    *   `/src/ppmr_primary.nb`: A minimal notebook that integrates the measured *Predator Prey Mass Relationship* that is evaluated in `/ppmr_fit.jl`, and defines the expected prey mass given a predator mass $E(M_H|M_P)$. This incorporates the output of the `/ppmr_fit.jl` code:  
         *   `/data/mammalian_fit_table.csv`: A table of the best-fit regression to log(prey mass) ~ log(predator mass)
         *   `/data/mammalian_mass.csv`: A list of mammalian predator and prey masses used to find the best-fit PPMR  
 *   The notebooks incorporate various data files:  
