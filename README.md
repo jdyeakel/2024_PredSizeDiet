@@ -14,7 +14,7 @@ Body size drives the energetic demands of organisms, largely constraining trophi
 ## File Tree
 |── 1_subsidy.nb  
 |── 2024_PredSizeDiet.code-workspace  
-|── 2_competition.nb  
+|── 2_competition_gen.nb  
 |── README.md  
 |── contemp_mammal_analysis.R  
 |── data  
@@ -42,9 +42,9 @@ Body size drives the energetic demands of organisms, largely constraining trophi
 |     |── ppmr_primary.nb  
 
 ## Description
-This repository contains the code required to reproduce the analyses used in the manuscript *Exploring ecological drivers of mammalian predator size and diet across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition.nb`.  
+This repository contains the code required to reproduce the analyses used in the manuscript *Exploring ecological drivers of mammalian predator size and diet across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition_gen.nb`.  
 *   `/1_subsidy.nb`: This notebook reproduces the analyses for the tri-trophic motif where the predator derives its energy from both an herbivore prey and an external subsidy.  
-*   `/2_competition.nb`: This notebook reproduces the analyses for the tri-trophic motif where the predator derives its energy from two herbivore consumer, which both compete for plant resource.  
+*   `/2_competition_gen.nb`: This notebook reproduces the analyses for the tri-trophic motif where the predator derives its energy from two herbivore consumer, which both compete for plant resource.  
 *   Both notebooks require: `src/allometric_functions_predpersp.nb`, `src/analysis_functions.nb`, `src/metabolic_constants.nb`, and `ppmr_primary.nb`, which are described below.  
     *   `/src/metabolic_constants.nb`: Metabolic constants used to parameterize the timescales associated with growth, reproduction, and mortality of the plant resource, both mammalian herbivore species, and the mammalian predator species.  
     *   `/src/allometric_functions_predpersp.nb`: Defines functions related to growth, reproduction, and mortality of all species in the motif, integrating the metabolic constants.  
