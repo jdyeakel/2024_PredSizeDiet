@@ -11,6 +11,9 @@ M.M. Pires
 ## Abstract
 Body size drives the energetic demands of organisms, largely constraining trophic interactions between species, and can play a significant role in shaping the feasibility of species' populations in a community. On macroevolutionary timescales, these demands feed back to shape the selective landscape driving the evolution of size and diet. We develop a theoretical framework based on three-level trophic food chain to explore mammalian population dynamics premised on bioenergetic trade-offs.  Our results show that interactions between predators, prey, and external subsidies generate instabilities linked to body size extrema, corresponding to observed limits of predator size and diet. These instabilities generate size-dependent constraints on coexistence and highlight a stabilizing carnivore size range between 40 to 110 Kg, encompassing the mean body size of terrestrial Cenozoic hypercarnivores. Finally, we show that predator dietary generalization confers a selective advantage with larger body size, up to a point where those advantages then decline at very large size classes, aligning with observations of contemporary and Pleistocene species. Our framework underscores the importance of understanding macroevolutionary pressures through the lens of ecological interactions, where the selective forces shaping and reshaping the dynamics of communities can be explored.
 
+## Zenodo Archive
+> https://doi.org/10.5281/zenodo.13983678  
+
 ## File Tree
 |── 1_subsidy.nb  
 |── 2024_PredSizeDiet.code-workspace  
