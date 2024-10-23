@@ -2,6 +2,8 @@
 
 # Functions
 
+namespace = '~/Dropbox/PostDoc/2024_PredSizeDiet';
+
 # Function to calculate the area of a polygon given its coordinates
 polygon_area <- function(coords) {
   # Ensure the coordinates are in a matrix format
@@ -28,7 +30,7 @@ polygon_area <- function(coords) {
 
 # Read the CSV data file
 # Replace 'path_to_file.csv' with the actual path to your CSV file
-isotope_data <- read.csv('~/Dropbox/PostDoc/2024_PredSizeDiet/data/mammalian_isotopes.csv', header = TRUE)
+isotope_data <- read.csv(paste(namespace,'/data/mammalian_isotopes.csv', sep = ""), header = TRUE)
 
 # Get unique combinations of loc and time
 loc_time_combinations <- unique(isotope_data[c("loc", "time","habitat")])
@@ -94,6 +96,10 @@ for (i in 1:nrow(loc_time_combinations)) {
         # library(sf)
         # hull_polygon <- st_polygon(list(hull_coords))
         # polygon_area <- st_area(hull_polygon)
+
+    } else {
+
+        herb_area <- NA
 
     }
 
@@ -197,18 +203,15 @@ for (i in 1:nrow(loc_time_combinations)) {
 # Remove Paul's data (if we want to)
 # remove_conditions <- !(results_df$source == "Koch-unpublished" )
 # results_df <- results_df[remove_conditions, ]
+write.csv(results_df, paste(namespace,'/data/diet_results_rangearea.csv', sep = ""), row.names = FALSE)
 
-write.csv(results_df, '~/Dropbox/PostDoc/2024_PredSizeDiet/data/diet_results_rangearea.csv', row.names = FALSE)
 
-
-nonfelidresults = results_df[results_df$felid == 0 & results_df$ratio > 0.,]
-felidresults = results_df[results_df$felid == 1 & results_df$ratio > 0.,]
+# nonfelidresults = results_df[results_df$felid == 0 & results_df$ratio > 0.,]
+# felidresults = results_df[results_df$felid == 1 & results_df$ratio > 0.,]
 
 
 plot(rowMeans(cbind(nonfelidresults$predmassmin,nonfelidresults$predmassmax)),nonfelidresults$ratio,log="x")
 points(rowMeans(cbind(felidresults$predmassmin,felidresults$predmassmax)),felidresults$ratio,pch=16)
-
-
 
 
 
@@ -237,4 +240,4 @@ results_sinclair <- data.frame(loc=location,
                          source=source,
                          stringsAsFactors = FALSE)
 
-write.csv(results_sinclair, '~/Dropbox/PostDoc/2022_PredSizeDiet/data/diet_sinclair_results.csv', row.names = FALSE)
+write.csv(results_sinclair, paste(namespace,'/data/diet_sinclair_results.csv', sep = ""), row.names = FALSE)

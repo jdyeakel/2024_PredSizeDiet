@@ -6,9 +6,11 @@ using(Distributions)
 using(Distributed)
 using(UnicodePlots)
 
-haywardfulldata = CSV.read("$(homedir())/Dropbox/PostDoc/2024_PCR/data/data_hayward_all.csv",header=true,DataFrame);
+namespace = "$(homedir())/Dropbox/PostDoc/2024_PredSizeDiet";
 
-delongdata = CSV.read("$(homedir())/Dropbox/PostDoc/2024_PCR/data/data_delong_mammal.csv",header=true,DataFrame);
+haywardfulldata = CSV.read(namespace * "" * "/data/data_hayward_all.csv",header=true,DataFrame);
+
+delongdata = CSV.read(namespace * "" * "/data/data_delong_mammal.csv",header=true,DataFrame);
 
 # "Panthera leo"
 # "Crocuta crocuta"
@@ -163,8 +165,8 @@ RawMammalianMean_preds = vec([RawPrey_preds_mean'; delong_predmass]);
 RawMammalianMean_prey = vec([RawPrey_preys_mean'; delong_preymass]);
 mammalian_fit_table=lineartablebuild(RawMammalianMean_preds,RawMammalianMean_prey);
 
-CSV.write("$(homedir())/Dropbox/PostDoc/2024_PCR/data/mammalian_fit_table.csv",mammalian_fit_table; header=true);
+CSV.write(namespace * "" * "/data/mammalian_fit_table.csv",mammalian_fit_table; header=true);
 
 Rawmammalian_sizetable = DataFrame([RawMammalianMean_preds RawMammalianMean_prey],:auto);
 rename!(Rawmammalian_sizetable,[:predmass,:preymass]);
-CSV.write("$(homedir())/Dropbox/PostDoc/2024_PCR/data/mammalian_mass.csv",Rawmammalian_sizetable; header=false);
+CSV.write(namespace * "" * "/data/mammalian_mass.csv",Rawmammalian_sizetable; header=false);

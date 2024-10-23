@@ -1,4 +1,4 @@
-# Exploring ecological drivers of mammalian predator size and diet across the Cenozoic
+# Bioenergetic trophic trade-offs determine mass-dependent extinction thresholds across the Cenozoic
 
 J.D. Yeakel,
 M.C. Hutchinson,
@@ -15,7 +15,6 @@ Body size drives the energetic demands of organisms, largely constraining trophi
 |── 1_subsidy.nb  
 |── 2024_PredSizeDiet.code-workspace  
 |── 2_competition_gen.nb  
-|── README.md  
 |── contemp_mammal_analysis.R  
 |── data  
 |     |── carnivore_mass_MoM.csv  
@@ -34,7 +33,15 @@ Body size drives the energetic demands of organisms, largely constraining trophi
 |── diet_analysis.R  
 |── file_tree.md  
 |── file_tree.txt  
+|── final_figures  
+|     |── fig_propfeasible_Comm2.png  
+|     |── fig_thresholdsoverwepsilon.png  
+|     |── fig_thresholdspopcomb_predpersp.png  
+|     |── genadvantagedata.png  
+|     |── suppfig_ppmr.pdf  
+|     |── suppfig_predthresholdhist.pdf  
 |── ppmr_fit.jl  
+|── README.md  
 |── src  
 |     |── allometric_functions_predpersp.nb  
 |     |── analysis_functions.nb  
@@ -42,7 +49,7 @@ Body size drives the energetic demands of organisms, largely constraining trophi
 |     |── ppmr_primary.nb  
 
 ## Description
-This repository contains the code required to reproduce the analyses used in the manuscript *Exploring ecological drivers of mammalian predator size and diet across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition_gen.nb`.  
+This repository contains the code required to reproduce the analyses used in the manuscript *Bioenergetic trophic trade-offs determine mass-dependent extinction thresholds across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition_gen.nb`. Additional data processing scripts include `.R` and `.jl` because the authors fall within a body size range where generalism is predicted to be advantageous.   
 *   `/1_subsidy.nb`: This notebook reproduces the analyses for the subsidy model where the predator derives its energy from both an herbivore prey and an external subsidy.  
 *   `/2_competition_gen.nb`: This notebook reproduces the analyses for the competition model where the predator derives its energy from two herbivore prey, which both compete for a plant resource.  
 *   Both notebooks require: `src/allometric_functions_predpersp.nb`, `src/analysis_functions.nb`, `src/metabolic_constants.nb`, and `ppmr_primary.nb`, which are described below.  
@@ -50,22 +57,32 @@ This repository contains the code required to reproduce the analyses used in the
     *   `/src/allometric_functions_predpersp.nb`: Defines functions related to growth, reproduction, and mortality of all species in the motif, integrating the metabolic constants.  
     *   `/src/analysis_functions.nb`: Defines numerous functions relating to the analysis of subsidy and competition models.  
     *   `/src/ppmr_primary.nb`: A minimal notebook that integrates the measured *Predator Prey Mass Relationship* that is evaluated in `/ppmr_fit.jl`, and defines the expected prey mass given a predator mass $E(M_H|M_P)$. This incorporates the output of the `/ppmr_fit.jl` code:  
-        *   `/data/mammalian_fit_table.csv`: A table of the best-fit regression to log(prey mass) ~ log(predator mass)
-        *   `/data/mammalian_mass.csv`: A list of mammalian predator and prey masses used to find the best-fit PPMR  
-*   The notebooks incorporate various data files:  
+*   The notebooks incorporate various data files:   
     *   `/data/densitydata.csv`: Mammalian density data by body size from Damuth et al. (1981). Columns - C1: Body mass (grams); C2: Density (inds/m^2)  
     *   `/data/carnivoredensities_trimmed.csv`: Mammalian carnivore density data by body size from Carbon & Gittleman (2002). Columns - C1: Body mass (grams); C2: Density (inds/m^2)  
     *   `/data/data_Hayward_all.csv`: Prey preferences and dietary data for large-bodied carnivores collated from Hayward, 2006; Hayward et al., 2006a,b; Hayward and Kerley, 2008, 2005; Hayward et al., 2006c. Columns - C1: Predator; C2: Predbodymasskg; C3: Prey; C4: JacobsIndex; C5: JI_SE; C6: PercentOfKills; C7: SE; C8: Preybodymasskg34adultfemalemass; C9: Preybodymasskg; C10: HerdSize; C11: HabitatDensity; C12: ThreatToPredator. See specific references for details.  
     *   `/data_delong_mammal.csv`: Predator and prey mass relationships for mammals in the FoRAGE database (Uiterwaal et al., 2018). Columns - C1: Species_name; C2: Pred_mass_mg; C3: Pred_mass_kg; C4: Prey_mass_mg; C5: Prey_mass_kg  
     *   `/data/diet_sinclair_results.csv`: Locality information for contempoary predators alongside prey body mass range as both an absolute value (carn_range; Kg) and a relative (unitless) value (ratio: prey body mass range / total prey range). The total prey range is denoted as herb_range. Data from (Sinclair et al. 2003). Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source
-    *   `/data/diet_results.csv`: Locality information for Pleistocene predators alongside prey carbon isotopic range as both an absolute value (carn_range; permil) and a relative (unitless) value (ratio: predator isotopic range / prey isotopic range). The prey isotopic range is denoted as herb_range. Data from (Anyonge & Roman, 2006; Christiansen & Harris, 2005; Coltrain et al., 2004; Dantas, 2022; DeSantis et al., 2021; Feranec & DeSantis, 2014; Figueirido et al., 2011; Flower, 2016; Fox-Dobbs et al., 2008; Fuller et al., 2014; Fuller et al., 2020; Gazin, 1942; Hill & Easterla, 2023; Koch et al., 2004; Koufos et al., 2018; Marciszak & Lipecki, 2022; Palmqvist et al., 1996; Palmqvist et al., 2002; Palmqvist et al., 2008; Sherani, 2016; Sorkin, 2006; Trayler et al., 2015). Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: carn_range; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source  
+    *   `/data/diet_results.csv`: Locality information for Pleistocene predators alongside prey carbon isotopic range or carbon and nitrogen area as a relative (unitless) value (ratio: predator isotopic range / prey isotopic range or predator isotopic area / prey isotopic area). Areas are calculated for assemblages where both carbon and nitrogen isotopic values are present and the predator sample size is >= 3, otherwise carbon isotopic range is calculated. The prey carbon isotopic range is denoted as herb_range, and the prey carbon and nitrogen area is denoted as herb_area. Data from (Anyonge & Roman, 2006; Christiansen & Harris, 2005; Coltrain et al., 2004; Dantas, 2022; DeSantis et al., 2021; Feranec & DeSantis, 2014; Figueirido et al., 2011; Flower, 2016; Fox-Dobbs et al., 2008; Fuller et al., 2014; Fuller et al., 2020; Gazin, 1942; Hill & Easterla, 2023; Koch et al., 2004; Koufos et al., 2018; Marciszak & Lipecki, 2022; Palmqvist et al., 1996; Palmqvist et al., 2002; Palmqvist et al., 2008; Sherani, 2016; Sorkin, 2006; Trayler et al., 2015). Columns - C1: location; C2: time period; C3: carnivore; C4: herb_range, C5: herb_area; C6: ratio; C7: predmassmin; C8: predmassmax; C9: family; C10: source; C11: habitat (C3 vs. mixed C3/C4); C12: ratiotype (whether the ratio is calculated from range or area). Used as input for `/2_competition_gen.nb`.  
+    *   `/data/diet_results_rangearea.csv`: Output from `diet_analysis.R`, documenting the isotopic ranges or areas of predator species relative to prey communities of different assemblages throughout the Pleistocene. Used as input for `/2_competition_gen.nb`.  
+    *   `/data/diet_results_sinclair.csv`: Output from `diet_analysis.R`, documenting the body mass ranges of predator species relative to prey communities from the contemporary Serengeti. Used as input for `/2_competition_gen.nb`.
+    *   `/data/fixedpointwsPH1H2overWPhi.m': Output generated from `/2_competition_gen.nb`. These simulation results derive from an analysis in the notebook (commented out), but can be loaded in to avoid running expensive simulations.  
+    *   `/data/fixedpointwsPH1H2Ratio.m': Output generated from `/2_competition_gen.nb`. These simulation results derive from an analysis in the notebook (commented out), but can be loaded in to avoid running expensive simulations.  
+    *   `/data/mammalian_isotopes_all.xlsx`: Excel file with the isotopic data used in `diet_analysis.R` with references.  
+    *   `/data/mammalian_isotopes_valuesonly.csv`: CSV file with the isotopic data used in `diet_analysis.R`.  
+    *   `/data/mammalian_fit_table.csv`: A table of the best-fit regression to log(prey mass) ~ log(predator mass)
+    *   `/data/mammalian_mass.csv`: Output from analysis of PPMR in `/ppmr_fit.jl`. A list of mammalian predator and prey masses used to find the best-fit PPMR.  
+    *   `/data/thresholdsoverwepsilon.csv`: Output generated from `/1_subsidy.nb`. These results derive from an analysis in the notebook (commented out), but can be loaded in to avoid running expensive simulations.  
 *   `/ppmr_fit.jl`: Code used to measure and generated the predator-prey mass relationship used in the mathematica notebooks.  
 *   `/diet_analyses.R`: Code used to generate the empirical diet breadth measures used in the Mathematica notebooks and stored in `/data/diet_sinclair_results.csv` and `/data/diet_results.csv`  
 *   `/contemp_mammalian_analysis.R`: Code to calculate the average body mass of both contemporary and Cenozoic carnivorans. Incorporates data from `/data/contemp_mammal_mass_smith_2004.csv` (Smith et al., 2004) and `/data/carnivore_mass_MoM.csv` (Smith et al., 2003).  
     *   `/data/contemp_mammal_mass_smith_2004.csv`: Contemporary mammal body size and locality information (Smith et al. 2004). Columns - C1: continent; C2: order; C3: family; genus; C4: genus_age; C5: richness; C6: mass_mean_log10; C7: mass_mean_grams  
     *   `/data/carnivore_mass_MoM.csv`: Cenozoic carnivoran body size information extract from the Mass of Mammals Database (MoM v.4.1) (Smith et al. 2003): Columns - C1: Order; C2: Family; C3: Genus; C4: Species; C5: Mass_g  
+    *   `/final_figures/`: Folder containing elements of the figures used in the manuscript, generated in `/1_subsidy.nb` and `/2_competition_gen.nb`.  
 
->   Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `fixedpointwsPH1H2overWPhi.m` and `fixedpointwsPH1H2Ratio.m`.
+>   Note: There are a few code blocks in the Mathematica notebooks that take a long time to run (2-3 hours on 18 cores). To avoid those, the notebooks can alternatively import `/data/fixedpointwsPH1H2overWPhi.m`, `/data/fixedpointwsPH1H2Ratio.m`, and `/data/thresholdsoverwepsilon.csv`.  
+
+
 <!-- 
 ## References
 *   Damuth, J. 1981. Population density and body size in mammals. Nature 290:699–700.  
