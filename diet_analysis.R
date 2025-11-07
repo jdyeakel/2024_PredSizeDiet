@@ -2,7 +2,7 @@
 
 # Functions
 
-namespace = '~/Dropbox/PostDoc/2024_PredSizeDiet';
+namespace = '~/Dropbox/PostDoc/2024_PredSizeDiet/PredSizeDiet';
 
 # Function to calculate the area of a polygon given its coordinates
 polygon_area <- function(coords) {
@@ -48,6 +48,7 @@ results_df <- data.frame(loc = character(),
                          source = character(),
                          habitat = character(),
                          ratiotype = character(),
+                         numsamples = numeric(),
                          stringsAsFactors = FALSE)
 
 # Loop over each loc and time
@@ -122,6 +123,8 @@ for (i in 1:nrow(loc_time_combinations)) {
         # current_mixture <- mixture_data[mixture_data$species == carnivore, ]
         predspecies = current_predators[current_predators$species == carnivore,]
 
+        numsamples <- length(predspecies$d13c)
+
         # Linear Range in d13C space
         pred_range <- max(predspecies$d13c, na.rm = TRUE) - min(predspecies$d13c, na.rm = TRUE)
         
@@ -192,7 +195,8 @@ for (i in 1:nrow(loc_time_combinations)) {
                                                 family = family,
                                                 source = source,
                                                 habitat = habitat,
-                                                ratiotype = ratiotype))
+                                                ratiotype = ratiotype,
+                                                numsamples = numsamples))
 
     }
 }

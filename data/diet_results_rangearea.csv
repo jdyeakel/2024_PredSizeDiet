@@ -1,51 +1,51 @@
-"loc","time","carnivore","herb_range","herb_area","ratio","predmassmin","predmassmax","family","source","habitat","ratiotype"
-"Spain","early Pleistocene","Pachycrocuta brevirostrias",6.6,25.865,0,110,110,"H","Palmqvist 2008","C3","range"
-"Spain","early Pleistocene","Pachycrocuta brevirostris",6.6,25.865,0.0260970423352016,110,110,"H","Palmqvist 2008","C3","area"
-"Spain","early Pleistocene","Homotherium latidens",6.6,25.865,0.0104388169340809,146,220,"F","Palmqvist 2008","C3","area"
-"Spain","early Pleistocene","Megantereon whitei",6.6,25.865,0.121212121212121,100,160,"F","Palmqvist 2008","C3","range"
-"Spain","early Pleistocene","Panthera cf. gombaszoegensis",6.6,25.865,0,110,210,"F","Palmqvist 2008","C3","range"
-"Spain","early Pleistocene","Ursus etruscus",6.6,25.865,0.0284167794316639,89.1,89.1,"U","Palmqvist 2008","C3","area"
-"Spain","early Pleistocene","Lycaon lycaonoides",6.6,25.865,0.0241639280881503,30,30,"C","Palmqvist 2008","C3","area"
-"Spain","early Pleistocene","Canis mosbachensis",6.6,25.865,0.0104388169340809,20.36,23.78,"C","Palmqvist 2008","C3","area"
-"Beringia","Pre-glacial","Arctodus",6.65,30.6468,0.00228408838769465,570,1000,"U","FoxDobbs 2008","C3","area"
-"Beringia","Pre-glacial","Canis",6.65,30.6468,0.140145137502121,23,80,"C","FoxDobbs 2008","C3","area"
-"Beringia","Pre-glacial","Homotherium",6.65,30.6468,0.203773314016472,146,220,"F","FoxDobbs 2008","C3","area"
-"Beringia","Pre-glacial","Ursus",6.65,30.6468,0.037850607567511,180,360,"U","FoxDobbs 2008","C3","area"
-"Beringia","Full-glacial","Arctodus",6.65,30.6315,0,570,1000,"U","FoxDobbs 2008","C3","range"
-"Beringia","Full-glacial","Canis",6.65,30.6315,0.102835316585867,23,80,"C","FoxDobbs 2008","C3","area"
-"Beringia","Full-glacial","Panthera atrox",6.65,30.6315,0.00326461322494822,344,420,"F","FoxDobbs 2008","C3","area"
-"Beringia","Full-glacial","Ursus",6.65,30.6315,0.0451127819548873,180,360,"U","FoxDobbs 2008","C3","range"
-"Beringia","Post-glacial","Canis",6.65,30.6315,0.046683969116759,23,80,"C","FoxDobbs 2008","C3","area"
-"Beringia","Post-glacial","Panthera atrox",6.65,30.6315,0.0156701434797511,344,420,"F","FoxDobbs 2008","C3","area"
-"Beringia","Post-glacial","Ursus",6.65,30.6315,0.077534564092519,180,360,"U","FoxDobbs 2008","C3","area"
-"Beringia","Holocene","Canis",6.65,30.6315,0,23,80,"C","FoxDobbs 2008","C3","range"
-"Friesenhahn Cave","Full-glacial","Homotherium",12.138,NA,0.0790080738177624,146,220,"F","Koch-unpublished","C3C4","range"
-"Friesenhahn Cave","Full-glacial","Homotherium_ds",12.138,NA,0.164771791069369,146,220,"F","DeSantis 2021","C3C4","range"
-"Friesenhahn Cave","Full-glacial","Smilodon floridanus",12.138,NA,0.543664524633383,160,280,"F","Koch-unpublished","C3C4","range"
-"Friesenhahn Cave","Full-glacial","Ursus americanus",12.138,NA,0.219228868017795,227,370,"U","Koch-unpublished","C3C4","range"
-"Friesenhahn Cave","Full-glacial","Canis latrans",12.138,NA,0.253748558246828,8,20,"C","Koch-unpublished","C3C4","range"
-"Friesenhahn Cave","Full-glacial","Canis dirus",12.138,NA,0,60,68,"C","Koch-unpublished","C3C4","range"
-"Ingleside","Pre-glacial","Canis dirus",14.33,NA,0.136078157711096,60,68,"C","Koch-unpublished","C3C4","range"
-"Ingleside","Pre-glacial","Tremarctos floridanus",14.33,NA,0,110,110,"U","Koch-unpublished","C3C4","range"
-"Ingleside","Pre-glacial","Smilodon fatalis",14.33,NA,0,160,280,"F","Koch-unpublished","C3C4","range"
-"Ingleside","Pre-glacial","Panthera atox",14.33,NA,0,344,420,"F","Koch-unpublished","C3C4","range"
-"Fairmead","mid-Pleistocene","Arctodus simus",5.4,NA,0,570,1000,"U","Trayler 2015","C3C4","range"
-"Fairmead","mid-Pleistocene","Canis dirus",5.4,NA,0.425925925925926,60,68,"C","Trayler 2015","C3C4","range"
-"Fairmead","mid-Pleistocene","Canis latrans",5.4,NA,0.444444444444444,8,20,"C","Trayler 2015","C3C4","range"
-"Fairmead","mid-Pleistocene","Homotherium sp.",5.4,NA,0,146,220,"F","Trayler 2015","C3C4","range"
-"Fairmead","mid-Pleistocene","Smilodon sp. ",5.4,NA,0.407407407407408,160,280,"F","Trayler 2015","C3C4","range"
-"Fairmead","mid-Pleistocene","Miracinonyx sp.",5.4,NA,0,50,50,"F","Trayler 2015","C3C4","range"
-"Irvington","early Pleistocene","Arctodus simus",3.66,NA,0,570,1000,"U","Trayler 2015","C3C4","range"
-"Irvington","early Pleistocene","Canis dirus",3.66,NA,0.64207650273224,60,68,"C","Trayler 2015","C3C4","range"
-"Irvington","early Pleistocene","Panthera onca",3.66,NA,0,57,113,"F","Trayler 2015","C3C4","range"
-"Irvington","early Pleistocene","Homotherium sp.",3.66,NA,0,146,220,"F","Trayler 2015","C3C4","range"
-"La Brea - P23","Pre-glacial","Canis dirus",3.8,10.255,0.208191126279863,60,68,"C","Fuller et al. 2014","C3","area"
-"La Brea - P23","Pre-glacial","Canis latrans",3.8,10.255,0,60,68,"C","Fuller 2020","C3","range"
-"La Brea - P23","Pre-glacial","Panthera atrox",3.8,10.255,0,344,420,"F","Fuller et al. 2014","C3","range"
-"La Brea - P23","Pre-glacial","Smilodon fatalis",3.8,10.255,0.0536323744514853,347,355,"F","Fuller et al. 2014","C3","area"
-"La Brea","Pre/Full-glacial","C. dirus",2.91,14.55175,0.59931279742986,60,68,"C","Coltrain 2004","C3","area"
-"La Brea","Pre/Full-glacial","C. latrans",2.91,14.55175,0.373930970501829,8,20,"C","Coltrain 2004","C3","area"
-"La Brea","Pre/Full-glacial","P. leo atrox",2.91,14.55175,0.278622846049444,344,420,"F","Coltrain 2004","C3","area"
-"La Brea","Pre/Full-glacial","S. fatalis",2.91,14.55175,0.38187159619977,347,355,"F","Coltrain 2004","C3","area"
-"Florida","early/mid Pleistocene","Canis edwardii",14.7,NA,0.537414965986394,20,40,"C","Feranec 2014","C3C4","range"
-"Florida","early/mid Pleistocene","Smilodon gracilis",14.7,NA,0.605442176870748,55,100,"F","Feranec 2014","C3C4","range"
+loc,time,carnivore,herb_range,herb_area,ratio,predmassmin,predmassmax,family,source,habitat,ratiotype,numsamples
+Spain,early Pleistocene,Pachycrocuta brevirostrias,6.6,25.865,0,110,110,H,Palmqvist 2008,C3,range,1
+Spain,early Pleistocene,Pachycrocuta brevirostris,6.6,25.865,0.026097042,110,110,H,Palmqvist 2008,C3,area,3
+Spain,early Pleistocene,Homotherium latidens,6.6,25.865,0.010438817,146,220,F,Palmqvist 2008,C3,area,3
+Spain,early Pleistocene,Megantereon whitei,6.6,25.865,0.121212121,100,160,F,Palmqvist 2008,C3,range,2
+Spain,early Pleistocene,Panthera cf. gombaszoegensis,6.6,25.865,0,110,210,F,Palmqvist 2008,C3,range,1
+Spain,early Pleistocene,Ursus etruscus,6.6,25.865,0.028416779,89.1,89.1,U,Palmqvist 2008,C3,area,3
+Spain,early Pleistocene,Lycaon lycaonoides,6.6,25.865,0.024163928,30,30,C,Palmqvist 2008,C3,area,3
+Spain,early Pleistocene,Canis mosbachensis,6.6,25.865,0.010438817,20.36,23.78,C,Palmqvist 2008,C3,area,3
+Beringia,Pre-glacial,Arctodus,6.65,30.6468,0.002284088,570,1000,U,FoxDobbs 2008,C3,area,3
+Beringia,Pre-glacial,Canis,6.65,30.6468,0.140145138,23,80,C,FoxDobbs 2008,C3,area,23
+Beringia,Pre-glacial,Homotherium,6.65,30.6468,0.203773314,146,220,F,FoxDobbs 2008,C3,area,11
+Beringia,Pre-glacial,Ursus,6.65,30.6468,0.037850608,180,360,U,FoxDobbs 2008,C3,area,6
+Beringia,Full-glacial,Arctodus,6.65,30.6315,0,570,1000,U,FoxDobbs 2008,C3,range,1
+Beringia,Full-glacial,Canis,6.65,30.6315,0.102835317,23,80,C,FoxDobbs 2008,C3,area,7
+Beringia,Full-glacial,Panthera atrox,6.65,30.6315,0.003264613,344,420,F,FoxDobbs 2008,C3,area,3
+Beringia,Full-glacial,Ursus,6.65,30.6315,0.045112782,180,360,U,FoxDobbs 2008,C3,range,2
+Beringia,Post-glacial,Canis,6.65,30.6315,0.046683969,23,80,C,FoxDobbs 2008,C3,area,9
+Beringia,Post-glacial,Panthera atrox,6.65,30.6315,0.015670143,344,420,F,FoxDobbs 2008,C3,area,5
+Beringia,Post-glacial,Ursus,6.65,30.6315,0.077534564,180,360,U,FoxDobbs 2008,C3,area,8
+Beringia,Holocene,Canis,6.65,30.6315,0,23,80,C,FoxDobbs 2008,C3,range,1
+Friesenhahn Cave,Full-glacial,Homotherium,12.138,NA,0.079008074,146,220,F,Koch-unpublished,C3C4,range,4
+Friesenhahn Cave,Full-glacial,Homotherium_ds,12.138,NA,0.164771791,146,220,F,DeSantis 2021,C3C4,range,8
+Friesenhahn Cave,Full-glacial,Smilodon floridanus,12.138,NA,0.543664525,160,280,F,Koch-unpublished,C3C4,range,2
+Friesenhahn Cave,Full-glacial,Ursus americanus,12.138,NA,0.219228868,227,370,U,Koch-unpublished,C3C4,range,2
+Friesenhahn Cave,Full-glacial,Canis latrans,12.138,NA,0.253748558,8,20,C,Koch-unpublished,C3C4,range,2
+Friesenhahn Cave,Full-glacial,Canis dirus,12.138,NA,0,60,68,C,Koch-unpublished,C3C4,range,1
+Ingleside,Pre-glacial,Canis dirus,14.33,NA,0.136078158,60,68,C,Koch-unpublished,C3C4,range,3
+Ingleside,Pre-glacial,Tremarctos floridanus,14.33,NA,0,110,110,U,Koch-unpublished,C3C4,range,1
+Ingleside,Pre-glacial,Smilodon fatalis,14.33,NA,0,160,280,F,Koch-unpublished,C3C4,range,1
+Ingleside,Pre-glacial,Panthera atox,14.33,NA,0,344,420,F,Koch-unpublished,C3C4,range,1
+Fairmead,mid-Pleistocene,Arctodus simus,5.4,NA,0,570,1000,U,Trayler 2015,C3C4,range,1
+Fairmead,mid-Pleistocene,Canis dirus,5.4,NA,0.425925926,60,68,C,Trayler 2015,C3C4,range,8
+Fairmead,mid-Pleistocene,Canis latrans,5.4,NA,0.444444444,8,20,C,Trayler 2015,C3C4,range,5
+Fairmead,mid-Pleistocene,Homotherium sp.,5.4,NA,0,146,220,F,Trayler 2015,C3C4,range,1
+Fairmead,mid-Pleistocene,Smilodon sp. ,5.4,NA,0.407407407,160,280,F,Trayler 2015,C3C4,range,3
+Fairmead,mid-Pleistocene,Miracinonyx sp.,5.4,NA,0,50,50,F,Trayler 2015,C3C4,range,1
+Irvington,early Pleistocene,Arctodus simus,3.66,NA,0,570,1000,U,Trayler 2015,C3C4,range,1
+Irvington,early Pleistocene,Canis dirus,3.66,NA,0.642076503,60,68,C,Trayler 2015,C3C4,range,2
+Irvington,early Pleistocene,Panthera onca,3.66,NA,0,57,113,F,Trayler 2015,C3C4,range,1
+Irvington,early Pleistocene,Homotherium sp.,3.66,NA,0,146,220,F,Trayler 2015,C3C4,range,1
+La Brea - P23,Pre-glacial,Canis dirus,3.8,10.255,0.208191126,60,68,C,Fuller et al. 2014,C3,area,8
+La Brea - P23,Pre-glacial,Canis latrans,3.8,10.255,0,60,68,C,Fuller 2020,C3,range,1
+La Brea - P23,Pre-glacial,Panthera atrox,3.8,10.255,0,344,420,F,Fuller et al. 2014,C3,range,1
+La Brea - P23,Pre-glacial,Smilodon fatalis,3.8,10.255,0.053632374,347,355,F,Fuller et al. 2014,C3,area,8
+La Brea,Pre/Full-glacial,C. dirus,2.91,14.55175,0.599312797,60,68,C,Coltrain 2004,C3,area,25
+La Brea,Pre/Full-glacial,C. latrans,2.91,14.55175,0.373930971,8,20,C,Coltrain 2004,C3,area,9
+La Brea,Pre/Full-glacial,P. leo atrox,2.91,14.55175,0.278622846,344,420,F,Coltrain 2004,C3,area,8
+La Brea,Pre/Full-glacial,S. fatalis,2.91,14.55175,0.381871596,347,355,F,Coltrain 2004,C3,area,23
+Florida,early/mid Pleistocene,Canis edwardii,14.7,NA,0.537414966,20,40,C,Feranec 2014,C3C4,range,20
+Florida,early/mid Pleistocene,Smilodon gracilis,14.7,NA,0.605442177,55,100,F,Feranec 2014,C3C4,range,20

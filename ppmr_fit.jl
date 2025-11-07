@@ -6,7 +6,7 @@ using(Distributions)
 using(Distributed)
 using(UnicodePlots)
 
-namespace = "$(homedir())/Dropbox/PostDoc/2024_PredSizeDiet";
+namespace = "$(homedir())/Dropbox/PostDoc/2024_PredSizeDiet/PredSizeDiet";
 
 haywardfulldata = CSV.read(namespace * "" * "/data/data_hayward_all.csv",header=true,DataFrame);
 
