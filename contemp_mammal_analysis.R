@@ -1,7 +1,12 @@
 
 # Contemporary Carnivora Mass Calculations
 
-data <- read.csv('~/Dropbox/PostDoc/2024_PredSizeDiet/PredSizeDiet/data/contemp_mammal_mass_smith_2004.csv', header = TRUE)
+
+namespace = '[PATH TO FOLDER]/PredSizeDiet';
+
+data <- read.csv(paste(namespace,'/data/contemp_mammal_mass_smith_2004.csv'), header = TRUE)
+
+
 
 carnivores <- data[data$order == "Carnivora", ]
 mass_g = carnivores$mass_mean_grams
@@ -36,7 +41,8 @@ modes_mass_grams <- 10^modes_log_mass
 # Paleo Carnivora Mass Calculations
 
 # Using MoM data
-data <- read.csv('~/Dropbox/PostDoc/2024_PredSizeDiet/PredSizeDiet/data/carnivore_mass_MoM.csv', header = TRUE)
+data <- read.csv(paste(namespace,'/data/carnivore_mass_MoM.csv'), header = TRUE)
+
 
 filtered_data <- subset(data, !Family %in% c("Phocidae", "Otariidae", "Odobenidae"))
 

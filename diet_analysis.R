@@ -2,7 +2,7 @@
 
 # Functions
 
-namespace = '~/Dropbox/PostDoc/2024_PredSizeDiet/PredSizeDiet';
+namespace = '[PATH TO FOLDER]/PredSizeDiet';
 
 # Function to calculate the area of a polygon given its coordinates
 polygon_area <- function(coords) {
