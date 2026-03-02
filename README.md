@@ -13,8 +13,8 @@ M.M. Pires
 Body size constrains trophic interactions, shaping the feasibility of species' populations. Over macroevolutionary timescales, these constraints feed back to shape selection on body size and diet. We develop a bioenergetic, three-level trophic framework -- typical of terrestrial mammalian ecosystems -- to explore how bioenergetic trade-offs emerging from predator-prey interactions constrain coexistence. We show that interactions among predators, prey, and subsidies destabilize populations at both small and large sizes, matching observed limits to predator size and diet. These instabilities constrain coexistence and highlight a feasible predator size range of ca. 40-110 kg, spanning the mean size of terrestrial Cenozoic hypercarnivores. Finally, we show that decreased dietary selectivity confers a fitness advantage to larger carnivores that wanes at the largest sizes, aligning with diet estimates for contemporary and Pleistocene species. Our results underscore that ecological pressures emerging from trophic interactions, rooted in energetics, give rise to selective forces driving observed macroevolutionary patterns.
 
 ## Zenodo Archive
-> Release v1.1  
-> https://doi.org/10.5281/zenodo.13983678  
+> Release v1.3  
+> https://doi.org/10.5281/zenodo.18842091  
 
 ## File Tree
 |── 1_subsidy.nb  
