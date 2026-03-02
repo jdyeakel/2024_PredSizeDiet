@@ -54,7 +54,8 @@ Body size constrains trophic interactions, shaping the feasibility of species' p
 |     |── ppmr_primary.nb  
 
 ## Description
-This repository contains the code required to reproduce the analyses used in the manuscript *Bioenergetic trophic trade-offs determine mass-dependent extinction thresholds across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition_gen.nb`. Additional data processing scripts include `.R` and `.jl` because the authors fall within a body size range where generalism is predicted to be advantageous.   
+This repository contains the code required to reproduce the analyses used in the manuscript *Bioenergetic trophic trade-offs determine mass-dependent extinction thresholds across the Cenozoic* by JD Yeakel, MC Hutchinson, CP Kempes, PL Koch, JL Gill, and MM Pires. The primary files include the Mathematica files `1_subsidy.nb` and `2_competition_gen.nb`. Additional data processing scripts include `.R` and `.jl` because the authors can't make up their minds.
+NOTE: in each file, the namespace/filespace will need to be updated to your local file path in order to properly load modules/data.   
 *   `/1_subsidy.nb`: This notebook reproduces the analyses for the subsidy model where the predator derives its energy from both an herbivore prey and an external subsidy.  
 *   `/2_competition_gen.nb`: This notebook reproduces the analyses for the competition model where the predator derives its energy from two herbivore prey, which both compete for a plant resource.  
 *   Both notebooks require: `src/allometric_functions_predpersp.nb`, `src/analysis_functions.nb`, `src/metabolic_constants.nb`, and `ppmr_primary.nb`, which are described below.  
