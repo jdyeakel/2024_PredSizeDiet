@@ -108,12 +108,6 @@ for (i in 1:nrow(loc_time_combinations)) {
 
 
 
-    # Assuming you have a function to create the MixSIAR source/mixture/discrimination data.frames
-    # This is where you would call that function
-    # source_data <- create_source_data(current_herbivores)
-    # mixture_data <- create_mixture_data(current_predators)
-    # discrimination_data <- create_discrimination_data()
-
     # Loop over each carnivore within the current loc/time
     unique_carnivores <- unique(current_predators$species)
     
@@ -203,10 +197,6 @@ for (i in 1:nrow(loc_time_combinations)) {
 
 
 
-
-# Remove Paul's data (if we want to)
-# remove_conditions <- !(results_df$source == "Koch-unpublished" )
-# results_df <- results_df[remove_conditions, ]
 write.csv(results_df, paste(namespace,'/data/diet_results_rangearea.csv', sep = ""), row.names = FALSE)
 
 

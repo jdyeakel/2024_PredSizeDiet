@@ -4,12 +4,13 @@ J.D. Yeakel,
 M.C. Hutchinson,
 C.P. Kempes,
 P.L. Koch,
+P.D.S. Ugarte,
 J.L. Gill,
 M.M. Pires
 
 
 ## Abstract
-Body size drives the energetic demands of organisms, largely constraining trophic interactions between species, and can play a significant role in shaping the feasibility of species' populations in a community. On macroevolutionary timescales, these demands feed back to shape the selective landscape driving the evolution of size and diet. We develop a theoretical framework based on three-level trophic food chain to explore mammalian population dynamics premised on bioenergetic trade-offs.  Our results show that interactions between predators, prey, and external subsidies generate instabilities linked to body size extrema, corresponding to observed limits of predator size and diet. These instabilities generate size-dependent constraints on coexistence and highlight a stabilizing carnivore size range between 40 to 110 Kg, encompassing the mean body size of terrestrial Cenozoic hypercarnivores. Finally, we show that predator dietary generalization confers a selective advantage with larger body size, up to a point where those advantages then decline at very large size classes, aligning with observations of contemporary and Pleistocene species. Our framework underscores the importance of understanding macroevolutionary pressures through the lens of ecological interactions, where the selective forces shaping and reshaping the dynamics of communities can be explored.
+Body size constrains trophic interactions, shaping the feasibility of species' populations. Over macroevolutionary timescales, these constraints feed back to shape selection on body size and diet. We develop a bioenergetic, three-level trophic framework -- typical of terrestrial mammalian ecosystems -- to explore how bioenergetic trade-offs emerging from predator-prey interactions constrain coexistence. We show that interactions among predators, prey, and subsidies destabilize populations at both small and large sizes, matching observed limits to predator size and diet. These instabilities constrain coexistence and highlight a feasible predator size range of ca. 40-110 kg, spanning the mean size of terrestrial Cenozoic hypercarnivores. Finally, we show that decreased dietary selectivity confers a fitness advantage to larger carnivores that wanes at the largest sizes, aligning with diet estimates for contemporary and Pleistocene species. Our results underscore that ecological pressures emerging from trophic interactions, rooted in energetics, give rise to selective forces driving observed macroevolutionary patterns.
 
 ## Zenodo Archive
 > Release v1.1  
